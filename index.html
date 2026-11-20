@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0a1a2c">
+<meta name="theme-color" content="#091524">
 <meta name="description" content="Pro Store — اكتشف +30 اشتراكاً رقمياً للذكاء الاصطناعي والتصميم والإنتاجية والتعلم والترفيه. اطلب واستفسر بسهولة عبر واتساب.">
 <title>Pro Store | Premium Digital Subscriptions</title>
 <script>
@@ -1364,6 +1364,673 @@ html #products .catalog-feature .section-sub{
   .catalog-feature-stat-label{font-size:13px}
 }
 @media (max-width:360px){.catalog-feature{padding:18px}}
+
+/* ===============================================================
+   PRO STORE / AURORA PRISM — cinematic creative campaign
+   No product cards, quick links, or interactive product widgets.
+   Only the original copy, CTA and an abstract animated sculpture.
+   =============================================================== */
+.editorial{padding:104px 0 94px!important;background:transparent!important}
+.editorial .editorial-signature{
+  --prism-mint:#8af3d8;--prism-purple:#b0a1ff;
+  position:relative;isolation:isolate;display:grid;
+  grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);
+  min-height:532px;overflow:hidden;border-radius:38px;
+  background:radial-gradient(ellipse 50% 84% at 83% 48%,rgba(67,70,157,.34),transparent 77%),
+    radial-gradient(ellipse 44% 76% at 30% 105%,rgba(16,117,130,.22),transparent 82%),
+    linear-gradient(113deg,#081423 3%,#0d2137 54%,#0a1833 100%)!important;
+  border:1px solid rgba(155,224,241,.24);color:#fff!important;
+  box-shadow:0 38px 82px rgba(5,20,48,.23),0 5px 14px rgba(8,35,58,.1),inset 0 1px rgba(255,255,255,.18);
+}
+.editorial .editorial-signature::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(127deg,rgba(255,255,255,.07),transparent 22%,transparent 73%,rgba(174,193,255,.05)),
+    radial-gradient(rgba(205,233,255,.13) .7px,transparent .8px);
+  background-size:auto,32px 32px;mask-image:linear-gradient(90deg,transparent 13%,#000 73%);opacity:.75;
+}
+.editorial .editorial-signature::after{
+  content:"";position:absolute;z-index:5;top:0;left:9%;right:9%;height:2px;pointer-events:none;
+  background:linear-gradient(90deg,transparent,#74d6ec 24%,#f8cdb0 53%,#b5a1ff 75%,transparent);opacity:.72;
+}
+.editorial-signature .editorial-copy{position:relative;z-index:6;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:65px clamp(28px,5.4vw,73px);min-width:0}
+.editorial-eyebrow{display:inline-flex;align-items:center;align-self:flex-start;gap:10px;direction:ltr;justify-content:flex-start!important;padding:9px 12px;border:1px solid rgba(151,242,223,.23);border-radius:100px;background:rgba(152,225,239,.065);margin-bottom:26px;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.editorial-eyebrow-line{width:7px;height:7px;flex:none;border-radius:50%;background:#b9f9d7;box-shadow:0 0 0 4px rgba(179,255,218,.1),0 0 16px rgba(179,255,218,.7)}
+.editorial-signature .editorial-copy .mini-label{font:900 10px/1.1 var(--font-en);letter-spacing:1.65px;color:#b5f1e4!important}
+.editorial-signature .editorial-copy h2{margin:0 0 24px!important;font-size:clamp(43px,4.3vw,63px)!important;font-weight:900!important;line-height:1.36!important;letter-spacing:-2px!important;color:#fff!important;text-wrap:balance;max-width:650px}
+.editorial-signature .editorial-copy h2 span{color:#a4f0e5!important;background:linear-gradient(103deg,#7fe8df 0%,#a4c5f7 50%,#e2bbf4 95%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important}
+.editorial-signature .editorial-copy p{font-size:clamp(13px,1.15vw,15px)!important;line-height:2.05!important;font-weight:650;color:#bfd0df!important;max-width:472px;margin:0 0 28px!important}
+html[lang=en] .editorial-signature .editorial-copy h2{line-height:1.10!important;letter-spacing:-1.7px!important}
+html[lang=en] .editorial-signature .editorial-copy p{line-height:1.75!important}
+.editorial-signature .editorial-copy .editorial-discover{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:58px;min-width:202px;padding:8px 9px 8px 22px;border:1px solid rgba(244,255,252,.75);border-radius:17px;background:linear-gradient(115deg,#bdfaf0,#dfebf5 53%,#f2d9ef)!important;color:#0c2538!important;font-size:13px!important;font-weight:900;box-shadow:0 16px 34px rgba(0,8,27,.24),inset 0 1px rgba(255,255,255,.8);transition:transform .26s ease,box-shadow .26s ease,filter .26s ease}
+.editorial-signature .editorial-copy .editorial-discover:hover{transform:translateY(-4px);filter:brightness(1.075);box-shadow:0 21px 42px rgba(0,8,27,.36)}
+.editorial-discover-arrow{width:39px;height:39px;display:grid;place-items:center;border-radius:12px;background:#122b45;color:#fff;transition:transform .3s ease}
+.editorial-discover-arrow svg{width:18px;height:18px}
+.editorial-discover:hover .editorial-discover-arrow{transform:translateX(-4px) rotate(-8deg)}
+html[lang=en] .editorial-discover:hover .editorial-discover-arrow{transform:translateX(4px) rotate(8deg)}
+.editorial-footnote{align-self:flex-start;display:flex;align-items:center;gap:12px;direction:ltr;justify-content:flex-start!important;margin-top:35px;color:#8aa7b9;font:800 9px/1.2 var(--font-en);letter-spacing:1.8px}
+.editorial-footnote-rule{width:36px;height:1px;background:linear-gradient(90deg,#98e6d7,transparent)}
+/* Abstract art: one floating faceted prism on a luminous orbital stage */
+.editorial-signature .editorial-graphic{position:relative;z-index:2;min-width:0;min-height:532px;display:grid;place-items:center;overflow:hidden;isolation:isolate}
+.editorial-signature .editorial-graphic::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 55% 48%,rgba(100,188,209,.15),transparent 56%);pointer-events:none}
+.prism-stage{width:min(100%,525px);height:520px;position:relative;display:grid;place-items:center;isolation:isolate;perspective:1100px}
+.prism-stage::before{content:"";position:absolute;inset:14% 4%;border-radius:50%;background:radial-gradient(circle at 48% 47%,rgba(132,230,224,.14),rgba(119,75,223,.09) 37%,transparent 68%);filter:blur(16px);pointer-events:none}
+.prism-stage::after{content:"";position:absolute;width:65%;height:36px;bottom:14px;left:17%;border-radius:50%;background:#040e1f;filter:blur(24px);opacity:.55;pointer-events:none}
+.prism-grid{position:absolute;inset:1% 0;opacity:.3;pointer-events:none;background-image:radial-gradient(#b4d6f7 1px,transparent 1px);background-size:25px 25px;mask-image:radial-gradient(ellipse at center,#000 0,transparent 69%)}
+.prism-glow{position:absolute;width:355px;height:355px;border-radius:50%;background:conic-gradient(from 20deg,#8cecd31c,#d89bfb31,#5c8ee439,#79f1d727,#8cecd31c);filter:blur(24px);animation:prismGlow 11s ease-in-out infinite;pointer-events:none}
+.prism-orbit{position:absolute;width:400px;height:400px;inset:auto;border-radius:50%;border:1px solid rgba(180,221,255,.3);box-shadow:0 0 0 26px rgba(133,187,235,.035),0 0 0 57px rgba(127,182,235,.026);animation:prismOrbit 29s linear infinite}
+.prism-orbit::before,.prism-orbit::after{content:"";position:absolute;border-radius:50%;background:#a2ffde;box-shadow:0 0 0 5px rgba(143,248,218,.1),0 0 24px #76f0db}
+.prism-orbit::before{width:10px;height:10px;top:16%;right:12%}.prism-orbit::after{width:7px;height:7px;bottom:14%;left:13%;background:#d5b0ff;box-shadow:0 0 0 5px rgba(206,174,255,.13),0 0 25px #ba9afb}
+.prism-orbit--oval{width:460px;height:240px;border:1px dashed rgba(188,221,247,.35);box-shadow:none;transform:rotate(-23deg);animation:prismOval 19s linear infinite}
+.prism-orbit--oval::before{width:7px;height:7px;top:16%;right:12%;background:#f3d3b4;box-shadow:0 0 16px #f4d5b8}.prism-orbit--oval::after{display:none}
+.prism-arc{position:absolute;width:490px;height:490px;border-radius:50%;background:conic-gradient(from 90deg,transparent 0 5%,rgba(150,246,235,.58) 9%,transparent 13% 39%,rgba(203,169,255,.48) 45%,transparent 48% 67%,rgba(244,192,165,.47) 71%,transparent 75% 100%);mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));animation:prismOrbit 40s linear infinite reverse;opacity:.85;pointer-events:none}
+.prism-core{position:relative;z-index:3;width:340px;height:340px;filter:drop-shadow(0 23px 35px rgba(0,7,28,.4));animation:prismFloat 8s ease-in-out infinite}
+.prism-core svg{width:100%;height:100%;display:block;overflow:visible}
+.prism-core-light{position:absolute;z-index:4;width:250px;height:250px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(206,255,242,.2),transparent 70%);filter:blur(22px);animation:prismBreathe 6s ease-in-out infinite}
+.prism-light-beam{position:absolute;z-index:1;width:420px;height:1px;background:linear-gradient(90deg,transparent,rgba(178,248,242,.65),rgba(229,193,255,.45),transparent);transform:rotate(-26deg);filter:drop-shadow(0 0 11px #95ffee);animation:prismBeam 7s ease-in-out infinite;pointer-events:none}
+.prism-light-beam.second{transform:rotate(64deg);opacity:.5;animation-delay:-3s}
+.prism-spark{position:absolute;z-index:4;width:5px;height:5px;border-radius:50%;background:#f3fff9;box-shadow:0 0 18px 5px rgba(151,251,235,.55);animation:prismTwinkle 4.5s ease-in-out infinite}
+.prism-spark.a{top:17%;left:17%}.prism-spark.b{bottom:21%;right:8%;background:#dcbfff;box-shadow:0 0 15px 4px #d3b1ff;animation-delay:-2s}.prism-spark.c{top:22%;right:17%;width:3px;height:3px;animation-delay:-3.2s}
+.prism-side-note{position:absolute;z-index:2;color:rgba(186,220,237,.52);font:800 9px/1.2 var(--font-en);letter-spacing:2px;direction:ltr;white-space:nowrap;pointer-events:none}
+.prism-side-note.a{top:12%;right:7%}.prism-side-note.b{bottom:11%;left:7%}
+.prism-coordinate{position:absolute;z-index:2;width:32px;height:32px;border:1px solid rgba(152,217,240,.28);border-radius:50%;display:grid;place-items:center;color:#d8eefa;font:700 12px/1 var(--font-en);background:rgba(16,42,71,.4);backdrop-filter:blur(7px)}
+.prism-coordinate.a{left:8%;top:30%}.prism-coordinate.b{right:6%;bottom:28%}
+@keyframes prismFloat{0%,100%{transform:translateY(2px) rotate(-5deg)}50%{transform:translateY(-13px) rotate(-1deg)}}
+@keyframes prismOrbit{to{transform:rotate(360deg)}}
+@keyframes prismOval{0%,100%{transform:rotate(-23deg)}50%{transform:rotate(7deg)}}
+@keyframes prismGlow{0%,100%{transform:scale(.96);opacity:.65}50%{transform:scale(1.1);opacity:1}}
+@keyframes prismBreathe{0%,100%{opacity:.35;transform:scale(.92)}50%{opacity:.82;transform:scale(1.1)}}
+@keyframes prismBeam{0%,100%{opacity:.24}50%{opacity:.68}}
+@keyframes prismTwinkle{0%,100%{opacity:.35;transform:scale(.65)}50%{opacity:1;transform:scale(1.45)}}
+html[data-theme=dark] .editorial .editorial-signature{border-color:rgba(157,221,232,.32)}
+@media(max-width:1100px){.editorial-signature .editorial-copy{padding:52px 34px}.editorial-signature .editorial-copy h2{font-size:clamp(35px,4vw,54px)!important}.prism-stage{transform:scale(.85);width:525px;max-width:none}.editorial-signature .editorial-graphic{min-height:485px}}
+@media(max-width:900px){
+  .editorial{padding:70px 0 77px!important}
+  .editorial .editorial-signature{grid-template-columns:1fr;min-height:0;border-radius:28px}
+  .editorial-signature .editorial-copy{padding:43px 29px 1px;text-align:center;align-items:center}
+  .editorial-signature .editorial-copy h2{font-size:clamp(37px,7vw,51px)!important;line-height:1.32!important;letter-spacing:-1.3px!important;margin-bottom:18px!important}
+  .editorial-signature .editorial-copy p{max-width:460px;margin-inline:auto!important}
+  .editorial-eyebrow{align-self:center}
+  .editorial-footnote{align-self:center;margin-top:24px}
+  .editorial-signature .editorial-graphic{height:370px;min-height:370px!important}
+  .prism-stage{width:420px;max-width:100%;height:362px;transform:none}
+  .prism-core{width:276px;height:276px}.prism-orbit{width:335px;height:335px}.prism-orbit--oval{width:365px;height:210px}.prism-arc{width:370px;height:370px}.prism-glow{width:295px;height:295px}
+  .prism-side-note{font-size:8px}
+}
+@media(max-width:420px){
+  .editorial-signature .editorial-copy{padding:37px 20px 0}
+  .editorial-signature .editorial-copy h2{font-size:clamp(31px,9vw,40px)!important;line-height:1.4!important}
+  .editorial-signature .editorial-copy p{font-size:12px!important}
+  .editorial-signature .editorial-copy .mini-label{font-size:8px;letter-spacing:1px}
+  .editorial-eyebrow{padding:8px 10px;margin-bottom:21px}
+  .editorial-signature .editorial-graphic{min-height:300px!important;height:300px}
+  .prism-stage{width:100%;height:294px}
+  .prism-core{width:225px;height:225px}.prism-orbit{width:260px;height:260px}.prism-orbit--oval{width:290px;height:166px}.prism-arc{width:290px;height:290px}.prism-glow{width:225px;height:225px}
+  .prism-light-beam{width:295px}.prism-side-note{font-size:6.5px;letter-spacing:1px}.prism-coordinate{width:24px;height:24px;font-size:9px}
+  .editorial-footnote{font-size:8px;letter-spacing:1px}
+}
+@media(prefers-reduced-motion:reduce){.prism-core,.prism-glow,.prism-orbit,.prism-arc,.prism-core-light,.prism-light-beam,.prism-spark{animation:none!important}}
+
+/* ===============================================================
+   PRO STORE — ATELIER / Complete Website Redesign 2026
+   One visual system: deep graphite, mineral teal, electric iris,
+   restrained champagne accents and generous editorial spacing.
+   All existing inventory and shopping functionality remain intact.
+   =============================================================== */
+:root{
+ --studio-ink:#111c2e;--studio-midnight:#091524;--studio-navy:#13253b;
+ --studio-violet:#9386ed;--studio-mint:#7ee5d6;--studio-warm:#eecda0;
+ --studio-paper:#f7f9fc;--studio-line:#e4ebf3;--studio-shadow:0 26px 72px rgba(11,31,56,.10);
+ --studio-radius:28px;
+}
+html{scroll-padding-top:98px}
+body{background:var(--studio-paper)!important;-webkit-font-smoothing:antialiased}
+.wrap{width:min(1270px,calc(100% - 84px))}
+.section-label{font:900 11px/1.4 var(--font-en)!important;letter-spacing:2.1px!important;color:#5f74ae!important}
+.section-label:before{color:#38b3a8!important}
+.section-title{font-size:clamp(38px,3.7vw,57px)!important;letter-spacing:-1.8px!important;line-height:1.32!important}
+.section-title em{color:#477f9c!important;text-shadow:none!important}
+.section-sub{font-size:15px!important;line-height:1.95!important;color:#687c90!important}
+.reveal{transition:opacity .7s ease,transform .75s cubic-bezier(.18,.8,.2,1)}
+/* Consistent navigation, unifying the header and footer brand */
+.header,.header.scrolled{background:rgba(8,20,36,.94)!important;border-bottom:1px solid rgba(177,235,232,.13)!important;box-shadow:0 8px 30px rgba(5,18,33,.15)!important;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.header .nav{height:84px;gap:23px}
+.header .ps-nav-brand{transition:transform .25s}
+.header .ps-nav-brand:hover{transform:translateY(-2px)}
+.header .nav-links{gap:24px}
+.header .nav-links a{position:relative;color:#cdd8e6!important;font-weight:800!important;font-size:14px!important;padding:9px 0}
+.header .nav-links a:after{content:'';position:absolute;inset-inline:0;bottom:1px;height:2px;background:linear-gradient(90deg,var(--studio-mint),#a99aef);transform:scaleX(0);transform-origin:center;transition:transform .23s;border-radius:10px}
+.header .nav-links a:hover:after,.header .nav-links a.active:after{transform:scaleX(1)}
+.header .nav-links a:hover,.header .nav-links a.active{color:#b7fbec!important}
+.header .nav-cta,.nav-cta{background:linear-gradient(120deg,#8b80e7,#3b9ea7)!important;color:#fff!important;border:1px solid #ffffff20!important;border-radius:100px!important;box-shadow:0 10px 22px #24496b45!important}
+.header .nav-cta:hover{filter:brightness(1.11)}
+.theme-toggle,.header-cart{border-radius:14px!important;background:#ffffff0e!important;border:1px solid #ffffff2c!important;box-shadow:none!important}
+.header-cart:hover,.theme-toggle:hover{border-color:#79e4da99!important;background:#ffffff1a!important}
+/* top promotional strip: a sleek ticker instead of a loud banner */
+.feature-banner{background:linear-gradient(105deg,#112b40,#273e62 57%,#174f58)!important;border-bottom:1px solid #b0ffef1c!important}
+.feature-banner:before{opacity:.3!important;animation:studioAurora 15s ease-in-out infinite alternate!important}
+.feature-banner:after{opacity:.13!important;background:repeating-linear-gradient(100deg,transparent 0 90px,#fff 91px 92px,transparent 93px 180px)!important}
+.feature-banner-inner{min-height:83px!important;gap:22px!important;padding-block:11px!important}
+.feature-banner-spark{width:46px!important;height:46px!important;transform:none!important;border-radius:14px!important;background:#ffffff0e!important;box-shadow:none!important;color:#b3f2d9!important}
+.feature-banner-spark svg{width:24px!important;height:24px!important}
+.feature-banner-kicker{font-size:9px!important;letter-spacing:2.3px!important;color:#c6d7e8!important}
+.feature-banner-copy p{font-size:clamp(13px,1.18vw,17px)!important;font-weight:800!important;letter-spacing:-.1px}
+.feature-banner-copy p strong{color:#cff4e3!important}
+.feature-banner-cta{background:rgba(255,255,255,.93)!important;color:#1c314a!important;padding:11px 18px!important;border:1px solid #fff!important;border-radius:100px!important;box-shadow:0 8px 18px #07182b2a!important}
+/* Hero: premium editorial composition and quieter, more cinematic motion */
+.hero{min-height:700px!important;overflow:hidden!important;position:relative;isolation:isolate;background:radial-gradient(ellipse 42% 74% at 7% 80%,rgba(30,145,148,.32),transparent 80%),radial-gradient(ellipse 48% 85% at 87% 15%,rgba(93,76,167,.29),transparent 74%),radial-gradient(ellipse 31% 45% at 59% 90%,rgba(35,66,122,.22),transparent 75%),linear-gradient(115deg,#071a28 0%,#0f1d36 50%,#14233c 100%)!important;border-bottom:1px solid #ffffff15}
+.hero:before{opacity:.48!important;background-image:radial-gradient(#bdf7ee22 .8px,transparent 1px)!important;background-size:27px 27px!important;mask-image:linear-gradient(90deg,#0006,transparent 75%)}
+.hero:after{content:'';position:absolute;z-index:0;pointer-events:none;inset:auto -13% -55% auto;width:790px;height:790px;border-radius:50%;border:1px solid #cbe4f311!important;box-shadow:0 0 0 76px #98c9ee08,0 0 0 157px #ae9ae908!important;transform:rotate(-13deg)}
+.hero-wrap{padding:68px 0 72px!important;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr)!important;gap:44px!important;align-items:center;min-height:675px}
+.hero-copy{position:relative;z-index:4;max-width:630px}
+.hero .eyebrow{background:#dff8f50c!important;color:#cbefe7!important;border:1px solid #c8fbf13a!important;padding:10px 17px!important;font-size:12px!important}
+.hero .eyebrow i{background:#8de9d5!important;box-shadow:0 0 0 5px #8de9d523,0 0 13px #80ead578!important}
+.hero h1{font-size:clamp(54px,5.1vw,82px)!important;line-height:1.21!important;letter-spacing:-3.1px!important;max-width:730px!important;margin:27px 0 24px!important;text-wrap:balance}
+.hero h1 .highlight{background:linear-gradient(90deg,#7fe5d7 0%,#a4ddf3 46%,#beaafb 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important}
+.hero h1 .highlight:after{height:5px!important;bottom:-8px!important;background:linear-gradient(90deg,#77e8d8,#afa0ef)!important;opacity:.55!important;border-radius:99px}
+.hero-description{font-size:16px!important;line-height:2!important;color:#c1d2de!important;max-width:550px!important;margin-bottom:29px!important}
+.hero-buttons{gap:12px}
+.hero .btn{min-height:55px;border-radius:15px!important;padding:14px 23px!important;font-size:13px!important;transition:transform .25s,box-shadow .25s!important}
+.hero .btn-dark{background:linear-gradient(115deg,#b4f2e2,#9fd8f4)!important;color:#0c2638!important;box-shadow:0 12px 25px #30bcbd2d!important}
+.hero .btn-dark:hover{box-shadow:0 17px 34px #31c3b744!important}
+.hero .btn-light{background:#ffffff0d!important;color:#f6faff!important;border:1px solid #d2e5f535!important}
+.hero .btn-light:hover{background:#ffffff19!important}
+.hero-customers{background:#ffffff0b!important;border:1px solid #b2fcf12c!important;border-radius:16px!important;padding:10px 15px!important;margin-top:25px!important;box-shadow:none!important;backdrop-filter:blur(9px)}
+.hero-customers-icon{width:39px!important;height:39px!important;flex-basis:39px!important;border-radius:12px!important;background:linear-gradient(120deg,#267f8d,#5d76bf)!important;box-shadow:none!important}
+.hero-customers-count{font-size:27px!important}.hero-customers-count span{color:#8cead6!important}
+.hero .mini-trust{display:flex;flex-wrap:wrap;gap:10px 19px!important;margin-top:22px!important;color:#d4e1e6!important;font-size:10px!important}
+.hero .mini-trust span{gap:5px}.hero .mini-trust svg{color:#7ce5ca!important}
+.hero-star{color:#9ce3e0!important;opacity:.45!important;font-size:31px!important}
+.hero-art{height:565px!important;min-height:0;perspective:1100px;overflow:visible!important}
+.hero-art:before{width:95%!important;background:radial-gradient(circle,#8b8ddd38,#318d9931 40%,transparent 75%)!important;filter:blur(30px)!important}
+.hero-art .art-ring{width:98%;border-color:#c4faff21!important}
+.hero-art .showcase{width:min(425px,82%)!important;border-radius:28px!important;padding:18px!important;position:relative!important;transform:rotate(-6deg)!important;background:linear-gradient(145deg,#1e2d4a 0%,#111c33 65%,#25244a 100%)!important;border:1px solid #a0c8eb40!important;box-shadow:0 35px 72px #020b2088,0 0 0 9px #ecf8ff08!important;animation:studioShowcaseFloat 9s ease-in-out infinite!important}
+.showcase-top{font-size:10px!important;color:#a5b9cf!important;letter-spacing:1.4px!important}
+.showcase-head{font-size:31px!important;letter-spacing:-1.2px!important}.showcase-head span{color:#a2e7dd!important}
+.showcase-grid{gap:10px!important}.showcase-app{min-height:104px!important;border-radius:16px!important;box-shadow:0 8px 19px #030e2235,inset 0 1px #ffffff59!important}
+.showcase-app.has-artwork .showcase-poster{object-fit:cover}
+.showcase-app.has-artwork b{font-size:10px!important;padding:6px 3px!important}
+.showcase-foot{letter-spacing:1.7px!important;font-size:8px!important;color:#9daec6!important}
+.art-float.one.popular-card,.art-float.two.popular-card{position:absolute!important;min-height:91px!important;width:262px!important;min-width:262px!important;max-width:262px!important;padding:13px 14px!important;gap:11px!important;border-radius:22px!important;border:1px solid #fff9!important;box-shadow:0 22px 42px #04102161,0 0 0 1px #ffffff66!important;backdrop-filter:blur(12px)!important}
+.art-float.one.popular-card{top:13px!important;right:-8px!important;bottom:auto!important;left:auto!important;transform:rotate(5deg)!important;background:linear-gradient(135deg,#f7fffe,#c4f4e6)!important}
+.art-float.two.popular-card{top:auto!important;bottom:9px!important;left:-13px!important;right:auto!important;transform:rotate(-4deg)!important;background:linear-gradient(135deg,#f9faff,#ddd8fd)!important}
+.art-float.popular-card .bubble{width:79px!important;height:65px!important;flex:0 0 79px!important;border-radius:15px!important}
+.art-float.popular-card .float-copy{gap:4px!important}
+.art-float.popular-card .float-copy strong{font-size:18px!important;letter-spacing:-.6px!important}
+.art-float.popular-card .float-copy small{font-size:9px!important;letter-spacing:1px!important}
+.art-float.popular-card .trend-badge{top:-10px!important;font-size:8px!important;padding:6px 9px!important;letter-spacing:1.15px!important;background:#337e86!important}
+.art-float.three{display:none!important}
+.art-sticker{width:75px!important;height:75px!important;border-radius:24px!important;font-size:12px!important;color:#123347!important;background:#bbf2e7!important;top:40px!important;left:25px!important;transform:rotate(-12deg)!important}
+/* Horizontal brand rail: calm surface and seamless movement */
+html .brand-rail{background:#edf3f9!important;border-color:#e0e9f1!important;padding:22px 0!important}
+.brand-rail-intro-glow{background:linear-gradient(135deg,#253a66,#4e91a3)!important;box-shadow:0 9px 19px #37518c36!important}
+.brand-marquee-item{border:1px solid #dde7f0!important;background:linear-gradient(145deg,#fff,#f8fbff)!important;border-radius:16px!important;box-shadow:0 8px 20px #102d4c0b!important}
+.brand-marquee-item:hover{box-shadow:0 14px 29px #09233d21!important;transform:translateY(-3px)}
+/* Category bento: intentional contrast with a clean contained grid */
+.collections{padding:103px 0 112px!important;background:linear-gradient(180deg,#f7f9fc 0%,#f0f5fb 100%)!important}
+.collections:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at 4% 20%,#aebaff12,transparent 35%),radial-gradient(circle at 96% 90%,#5cc8b814,transparent 32%)}
+.collections .section-head{margin-bottom:36px!important}
+.collections .tiny-link{display:inline-flex;align-items:center;gap:10px;border-radius:100px;padding:12px 17px;background:#fff;border:1px solid #dbe5ee;color:#20465b!important;box-shadow:0 7px 19px #102c4610;transition:transform .25s,box-shadow .25s}
+.collections .tiny-link:hover{transform:translateY(-3px);box-shadow:0 11px 23px #102c4624}
+.collection-bento{gap:17px!important}
+.collection-bento .collection-card{border:1px solid #ffffff48!important;border-radius:27px!important;box-shadow:0 17px 32px #16283e17,inset 0 1px #ffffff30!important;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s!important}
+.collection-bento .collection-card:hover{transform:translateY(-7px)!important;box-shadow:0 24px 44px #15284435!important}
+.collection-bento .collection-card:focus-visible{outline:3px solid #62d5c6!important;outline-offset:4px}
+.collection-card .collection-apps .cat-app{box-shadow:0 11px 22px #020c233f,0 1px #fff8 inset!important}
+.collection-bento .collection-card--all{border-color:#9cebd245!important;box-shadow:0 22px 48px #12274330!important}
+/* Catalog: clear product hierarchy, refined cards and practical controls */
+.catalog{background:linear-gradient(180deg,#eaf0f7 0%,#f5f8fc 45%,#eef3f9 100%)!important;padding:106px 0 115px!important}
+.catalog:before{background:linear-gradient(180deg,#e7eff6,#f5f8fb)!important}
+.catalog-feature{border:1px solid #d9e6ed!important;border-radius:27px!important;background:linear-gradient(114deg,#f9fbff,#eff8fa 61%,#eef0fc)!important;box-shadow:0 20px 44px #1c3c5d13!important;padding:43px clamp(24px,4.4vw,60px)!important;gap:26px!important;overflow:hidden}
+.catalog-feature:before{content:'';position:absolute;inset:auto -100px -135px auto;pointer-events:none;width:350px;height:350px;border-radius:50%;border:1px solid #6591bd22;box-shadow:0 0 0 35px #7eddd91a,0 0 0 77px #b6a6fa0a}
+.catalog-feature-kicker{font-size:11px!important;letter-spacing:2px!important;color:#486f87!important}
+.catalog-feature .section-title{font-size:clamp(36px,3.75vw,58px)!important;line-height:1.25!important;color:#142a3d!important}
+.catalog-feature .section-title em{color:#397e94!important}
+.catalog-feature .section-sub{max-width:570px!important;color:#60788a!important;font-size:14px!important}
+.catalog-feature-stat{color:#1a5263!important;border-color:#99bbb967!important}
+.catalog-feature-stat-number{color:#256e83!important}
+.catalog-feature-stat-label{color:#687f91!important}
+.toolbar{padding:10px 0 5px;gap:18px!important}
+.filters{gap:9px!important}
+.filters .filter{border-radius:100px!important;background:#fff!important;color:#455a70!important;padding:12px 18px!important;border:1px solid #d9e4ee!important;font-size:12px!important;box-shadow:0 5px 15px #17375306!important;transition:transform .2s,box-shadow .2s,background .2s!important}
+.filters .filter:hover{transform:translateY(-2px);border-color:#93d5ce!important;box-shadow:0 9px 16px #12344e12!important}
+.filters .filter[aria-pressed=true]{background:linear-gradient(110deg,#20385a,#365c83)!important;color:#fff!important;border-color:#20385a!important;box-shadow:0 8px 17px #19385227!important}
+.search-box,.sort-select{border-radius:14px!important;min-height:47px;background:#fff!important;color:#1b344a!important;border:1px solid #d5e1ec!important;box-shadow:0 5px 14px #18345308!important}
+.search-box input{color:#183349!important}
+.search-box:focus-within{border-color:#5cbeb2!important;box-shadow:0 0 0 4px #57cfc021!important}
+.results{font-size:12px!important;color:#60788f!important;margin-block:19px 18px!important}
+.products-grid{gap:19px!important}
+.product-card{border:1px solid #e0e8f1!important;border-radius:24px!important;background:#fff!important;box-shadow:0 10px 29px #1639550e!important;padding:10px!important;transition:transform .32s cubic-bezier(.17,.8,.27,1),box-shadow .32s,border-color .32s!important}
+.product-card:hover{transform:translateY(-7px)!important;box-shadow:0 25px 46px #14304c23!important;border-color:#afd5d4!important}
+.product-card:before{background:linear-gradient(125deg,#7ad9cb,#b2aaf3,#e7cfab)!important}
+.product-card .product-head{min-height:99px;padding:16px 11px 12px!important}
+.product-card h3{font-size:19px!important;letter-spacing:-.4px!important;color:#162b41!important}
+.product-head-category{font-size:10px!important;color:#57758e!important}
+.product-art{height:191px!important;border-radius:17px!important;overflow:hidden}
+.product-logo{border-radius:25px!important;box-shadow:0 12px 25px #0a17372c!important}
+.product-card .card-content{padding:17px 11px 11px!important}
+.product-card .card-content p{color:#697e91!important;font-size:12px!important;line-height:1.8!important}
+.card-content .price-note{font-size:10px!important;color:#527185!important}
+.product-actions{gap:9px!important}
+.cart-add{min-height:46px!important;background:linear-gradient(120deg,#ebfbf8,#edf4ff)!important;color:#22586d!important;border:1px solid #ccebe9!important;border-radius:12px!important}
+.cart-add.is-added{background:#e1f8ef!important;color:#116c5a!important}
+.order-btn{background:linear-gradient(120deg,#203857,#345f7c)!important;color:white!important;box-shadow:none!important;min-height:47px!important;border-radius:12px!important}
+.order-btn:hover{background:linear-gradient(120deg,#274c75,#387e93)!important;box-shadow:0 12px 19px #1d537529!important}
+/* Editorial campaign remains abstract: refinements in layout, materials and motion */
+.editorial{padding:102px 0!important;background:#f7f9fc!important}
+.editorial .editorial-signature{border-radius:34px!important;box-shadow:0 30px 64px #0d233a2c!important}
+.editorial-signature .editorial-copy h2{font-size:clamp(42px,4.05vw,61px)!important}
+.editorial-signature .editorial-copy .editorial-discover{border-radius:14px!important}
+/* Order steps: a coherent process rail instead of three unrelated boxes */
+.how{background:#f7f9fc!important;padding:94px 0 110px!important}
+.how .section-head{margin-bottom:46px!important}
+.how .section-sub{max-width:640px!important}
+.steps{gap:19px!important;position:relative}
+.step,.step:nth-child(2),.step:nth-child(3){background:linear-gradient(145deg,#fff,#f7fafc)!important;border:1px solid #e0e9f0!important;border-radius:25px!important;padding:32px!important;min-height:238px;box-shadow:0 12px 25px #102f4a0c!important;transition:transform .28s ease,box-shadow .28s!important}
+.step:hover{transform:translateY(-5px);box-shadow:0 21px 36px #142f4c1d!important}
+.step-num,.step:nth-child(2) .step-num,.step:nth-child(3) .step-num{color:#e4edf3!important;font-size:75px!important;top:8px;left:18px}
+.step-icon,.step:nth-child(2) .step-icon,.step:nth-child(3) .step-icon{width:58px!important;height:58px!important;background:#e7f3f2!important;color:#267f88!important;border-radius:17px!important;margin-bottom:25px!important}
+.step h3{font-size:19px!important;color:#172c41!important;margin-bottom:12px!important}
+.step p{color:#738598!important;font-size:13px!important;line-height:1.9!important}
+.step-alert{color:#7b8998!important;margin-top:27px!important}
+/* FAQ, confidence and final CTA */
+.faq{background:linear-gradient(180deg,#eff4f9,#f7fafd)!important;padding:102px 0!important}
+.faq-grid{gap:clamp(35px,7vw,100px)!important}
+.faq-side h2{font-size:clamp(36px,4vw,54px)!important;color:#172b41!important;line-height:1.3!important}
+.faq-side p{color:#6d8094!important;font-size:14px!important;line-height:2!important}
+.faq-side .btn-light{background:#152d47!important;color:#fff!important;border:1px solid #152d47!important}
+.faq-list{gap:13px!important}
+.faq-item{border-radius:17px!important;background:#fff!important;border:1px solid #dfe7ee!important;box-shadow:0 6px 17px #12304a0a!important;transition:box-shadow .25s,border-color .25s}
+.faq-item[open]{border-color:#9ccbc8!important;box-shadow:0 13px 25px #0b334b1a!important}
+.faq-item summary{padding:23px 24px!important;font-size:14px!important;color:#1d3348!important}
+.faq-item p{padding:0 24px 22px!important;font-size:13px!important;color:#6c8193!important}
+.contact{padding:106px 0!important;background:#f7f9fc!important}
+.contact-box{background:radial-gradient(ellipse 43% 74% at 9% 12%,#6a71c248,transparent 75%),radial-gradient(ellipse 39% 70% at 92% 94%,#3dbead42,transparent 77%),linear-gradient(115deg,#0c1b31,#182a48 56%,#174a55)!important;border:1px solid #84c8c02d!important;border-radius:35px!important;padding:80px 44px!important;box-shadow:0 27px 65px #10293b2d!important}
+.contact-box:before{opacity:.5!important;color:#aeebda!important}.contact-box:after{color:#ad9af2!important;opacity:.45!important}
+.contact-box h2{font-size:clamp(39px,4.3vw,62px)!important;max-width:840px!important;color:#fff!important;line-height:1.32!important}
+.contact-box h2 span{color:#92eee0!important}
+.contact-box p{color:#d3e3ea!important;font-size:14px!important;max-width:580px!important}
+.contact-box .mini-label{color:#f5d19f!important;letter-spacing:2.2px}
+.contact-box .btn{background:linear-gradient(120deg,#b7f6e6,#c9e7f5)!important;color:#0d2c42!important;border-radius:15px!important;padding:15px 25px!important}
+.contact-box .btn:hover{transform:translateY(-3px);box-shadow:0 14px 24px #0b152b45}
+/* Footer as a purposeful final destination */
+.footer,html[data-theme=dark] .footer{background:#081829!important;padding-top:76px!important}
+.footer:before{background:#5685a02c!important}
+.footer-grid{gap:50px!important}
+.footer .footer-about{font-size:14px!important;color:#abbed0!important;line-height:2.05!important;max-width:350px!important}
+.footer h4{font-size:15px!important;color:#f1f6ff!important;letter-spacing:.1px;margin-bottom:22px!important}
+.footer ul{gap:13px!important}
+.footer a:not(.brand){font-size:13px!important;color:#a9bdd1!important}
+.footer a:hover{color:#a7f2e1!important}
+.footer-facebook{margin-top:24px!important}
+.footer-bottom{border-top:1px solid #ffffff1a!important;margin-top:63px!important;color:#a1b1c3!important;font-size:11px!important}
+/* Accessibility, mobile nav and responsive system */
+@media(max-width:1130px){.wrap{width:calc(100% - 56px)}.header .nav-links{gap:12px}.header .nav-links a{font-size:12px!important}.hero-wrap{gap:24px!important}.hero h1{font-size:clamp(49px,5.4vw,72px)!important}.hero-art .showcase{width:min(370px,83%)!important}}
+@media(max-width:900px){
+ .header .nav{height:72px}
+ .header .nav-links{gap:0}
+ .header .nav-links a{padding:14px 15px!important;font-size:16px!important}
+ .header .nav-links a:after{display:none}
+ .hero-wrap{grid-template-columns:1fr!important;gap:20px!important;padding:67px 0 53px!important}
+ .hero-copy{max-width:780px;margin:auto;text-align:center}
+ .hero .eyebrow{justify-content:center}
+ .hero h1{font-size:clamp(48px,7vw,74px)!important;margin-inline:auto!important;line-height:1.26!important}
+ .hero-description{margin-inline:auto}
+ .hero-buttons,.hero .mini-trust{justify-content:center}
+ .hero-customers{margin-inline:auto}
+ .hero-art{height:520px!important;width:min(620px,100%);margin:0 auto;display:grid!important;place-items:center!important;gap:0!important;padding:0!important;position:relative!important}
+ .hero-art .showcase{width:min(415px,75%)!important;order:0!important;align-self:center!important}
+ .art-float.one.popular-card,.art-float.two.popular-card{position:absolute!important;min-height:84px!important;width:245px!important;min-width:245px!important;max-width:245px!important;order:0!important;align-self:auto!important}
+ .art-float.one.popular-card{top:5px!important;right:0!important;bottom:auto!important;left:auto!important;transform:rotate(4deg)!important}
+ .art-float.two.popular-card{top:auto!important;bottom:11px!important;left:0!important;right:auto!important;transform:rotate(-3deg)!important}
+ .hero-art .art-sticker{top:30px!important;left:5%!important}
+ .hero-art:before{top:10%!important;height:85%!important;width:80%!important}
+ .hero-art .art-ring{top:10%!important}
+ .footer-grid{gap:32px!important}
+}
+@media(max-width:650px){
+ .wrap{width:calc(100% - 34px)}
+ .feature-banner-inner{gap:10px!important;min-height:76px!important}
+ .feature-banner-spark{display:none!important}
+ .feature-banner-copy p{font-size:11px!important;line-height:1.65!important}
+ .feature-banner-kicker{font-size:8px!important;letter-spacing:1.1px!important}
+ .feature-banner-cta{font-size:10px!important;padding:10px 11px!important;margin:0!important}
+ .feature-banner-cta .icon{width:14px;height:14px}
+ .hero-wrap{padding:51px 0 45px!important}
+ .hero h1{font-size:clamp(39px,10vw,56px)!important;line-height:1.28!important;letter-spacing:-1.6px!important;margin-block:22px 17px!important}
+ .hero-description{font-size:13px!important;line-height:1.9!important;margin-bottom:22px!important}
+ .hero .eyebrow{font-size:10px!important;padding:8px 13px!important}
+ .hero .btn{font-size:11px!important;min-height:47px!important;padding:12px 16px!important}
+ .hero-customers{padding:8px 11px!important;gap:7px!important}
+ .hero .mini-trust{gap:7px 12px!important;font-size:9px!important}
+ .hero-art{height:405px!important;min-height:0!important;padding:0!important;gap:0!important}
+ .hero-art .showcase{width:min(295px,76%)!important;transform:rotate(-5deg)!important;padding:12px!important;border-radius:22px!important}
+ .showcase-grid{gap:6px!important}.showcase-app{min-height:76px!important;border-radius:12px!important}
+ .showcase-head{font-size:22px!important;margin-bottom:10px!important}
+ .showcase-app.has-artwork b{font-size:8px!important;padding:4px 2px!important}
+ .art-float.one.popular-card,.art-float.two.popular-card{width:182px!important;min-width:182px!important;max-width:182px!important;min-height:63px!important;padding:8px 9px!important;gap:7px!important;border-radius:16px!important}
+ .art-float.one.popular-card{top:6px!important;right:1px!important;left:auto!important}
+ .art-float.two.popular-card{bottom:0!important;left:1px!important;right:auto!important}
+ .art-float.popular-card .bubble{width:56px!important;height:45px!important;flex:0 0 56px!important;border-radius:10px!important}
+ .art-float.popular-card .float-copy strong{font-size:13px!important;letter-spacing:-.4px!important}
+ .art-float.popular-card .float-copy small{font-size:7px!important;letter-spacing:.5px!important}
+ .art-float.popular-card .trend-badge{font-size:6px!important;top:-8px!important;padding:4px 7px!important}
+ .hero-art .art-sticker{width:48px!important;height:48px!important;border-radius:16px!important;font-size:8px!important;top:60px!important;left:1%!important}
+ .collections{padding:74px 0 79px!important}
+ .section-title{font-size:clamp(30px,7.7vw,40px)!important}
+ .section-sub{font-size:12px!important}
+ .collections .section-head{display:block}
+ .collections .tiny-link{margin-top:20px;width:max-content;padding:9px 13px;font-size:11px}
+ .collection-bento{gap:12px!important}
+ .collection-bento .collection-card{border-radius:21px!important}
+ .catalog{padding:77px 0 88px!important}
+ .catalog-feature{padding:29px 20px!important;border-radius:21px!important}
+ .catalog-feature .section-title{font-size:clamp(31px,8vw,43px)!important}
+ .catalog-feature .section-sub{font-size:12px!important}
+ .filters .filter{padding:10px 14px!important;font-size:10px!important}
+ .products-grid{gap:13px!important}
+ .product-card{border-radius:20px!important;padding:8px!important}
+ .product-card .product-head{min-height:87px;padding:11px 9px 10px!important}
+ .product-card h3{font-size:17px!important}
+ .product-art{height:184px!important;border-radius:14px!important}
+ .product-card .card-content{padding:13px 9px 9px!important}
+ .product-card .card-content p{font-size:11px!important}
+ .editorial{padding:79px 0!important}
+ .how{padding:75px 0 80px!important}
+ .steps{gap:11px!important}
+ .step{min-height:0!important;padding:26px!important;border-radius:20px!important}
+ .step p{font-size:12px!important}
+ .faq{padding:77px 0!important}
+ .faq-item summary{font-size:12px!important;padding:18px!important}
+ .faq-item p{font-size:11px!important;padding:0 18px 18px!important}
+ .contact{padding:76px 0!important}
+ .contact-box{padding:59px 23px!important;border-radius:24px!important}
+ .contact-box h2{font-size:clamp(34px,9vw,48px)!important}
+ .contact-box p{font-size:12px!important}
+ .footer{padding-top:56px!important}
+ .footer-grid{gap:31px 21px!important}
+ .footer h4{font-size:13px!important}
+ .footer a:not(.brand){font-size:12px!important}
+ .footer .footer-about{font-size:12px!important}
+ .mobile-bar{background:rgba(250,253,255,.98)!important;border-color:#d9e6ee!important;box-shadow:0 -10px 27px #0b2c4623!important}
+ .mobile-bar a{font-size:10px!important}
+ .wa-float{bottom:87px!important;right:15px!important}
+}
+@media(max-width:360px){.hero-art{height:380px!important}.hero-art .showcase{width:min(269px,76%)!important}.hero .btn{padding:10px 11px!important}.header .nav{gap:5px!important}}
+/* Dark mode remains genuinely readable rather than inheriting pale cards */
+html[data-theme=dark] body{background:#0a1526!important}
+html[data-theme=dark] .collections{background:linear-gradient(180deg,#0d1a2e,#10223b)!important}
+html[data-theme=dark] .catalog{background:linear-gradient(180deg,#0f2136,#0c1c30)!important}
+html[data-theme=dark] .catalog-feature{background:linear-gradient(120deg,#172c43,#1b324d 61%,#1e2e53)!important;border-color:#34526a!important}
+html[data-theme=dark] .catalog-feature .section-title{color:#f5faff!important}
+html[data-theme=dark] .catalog-feature .section-title em{color:#89e5d4!important}
+html[data-theme=dark] .catalog-feature .section-sub{color:#c0d2e2!important}
+html[data-theme=dark] .catalog-feature-kicker,.catalog-feature-stat-label{color:#b6cde1!important}
+html[data-theme=dark] .catalog-feature-stat-number{color:#9debd9!important}
+html[data-theme=dark] .filters .filter{background:#1c3249!important;border-color:#34546a!important;color:#d4e4ef!important}
+html[data-theme=dark] .filters .filter[aria-pressed=true]{background:linear-gradient(120deg,#386178,#3f638e)!important;color:#fff!important}
+html[data-theme=dark] .product-card{background:#15263e!important;border-color:#34465a!important}
+html[data-theme=dark] .product-card h3{color:#f5faff!important}
+html[data-theme=dark] .product-card .card-content p{color:#bed0dc!important}
+html[data-theme=dark] .product-card .price-note{color:#dbe8ee!important}
+html[data-theme=dark] .editorial,html[data-theme=dark] .how,html[data-theme=dark] .contact{background:#0c192a!important}
+html[data-theme=dark] .step,html[data-theme=dark] .step:nth-child(2),html[data-theme=dark] .step:nth-child(3){background:linear-gradient(145deg,#172b42,#18263d)!important;border-color:#34475c!important}
+html[data-theme=dark] .step h3{color:#f3f8fc!important}
+html[data-theme=dark] .step p{color:#c1d1df!important}
+html[data-theme=dark] .faq{background:#112137!important}
+html[data-theme=dark] .faq-item{background:#192b42!important;border-color:#354d62!important}
+html[data-theme=dark] .faq-item summary{color:#f3f9ff!important}
+html[data-theme=dark] .faq-item p{color:#bbcfdf!important}
+html[data-theme=dark] .collections .section-title,html[data-theme=dark] .how .section-title,html[data-theme=dark] .faq-side h2{color:#f4faff!important}
+html[data-theme=dark] .collections .section-sub,html[data-theme=dark] .how .section-sub,html[data-theme=dark] .faq-side p{color:#c1d1df!important}
+html[data-theme=dark] .brand-rail{background:#14273d!important;border-color:#28445b!important}
+html[data-theme=dark] .brand-marquee-item{background:linear-gradient(145deg,#1e3550,#1b2b46)!important;color:#f6f9ff!important;border-color:#34536a!important}
+html[data-theme=dark] .collections .tiny-link{background:#1e354f!important;color:#c7efe8!important;border-color:#3b5a6e!important}
+/* Decorative motion tuned for comfort; no layout-shifting animation */
+@keyframes studioShowcaseFloat{0%,100%{transform:rotate(-6deg) translateY(0)}50%{transform:rotate(-4deg) translateY(-9px)}}
+@keyframes studioAurora{from{transform:translate(-2%,0) scale(1)}to{transform:translate(4%,-4%) scale(1.06)}}
+@media(prefers-reduced-motion:reduce){.hero-art .showcase,.feature-banner:before{animation:none!important}.product-card,.collection-card,.step,.nav-cta,.cart-add{transition:none!important}}
+
+
+/* Pro Store / CONNECT — premium conversation-focused contact CTA */
+.contact .contact-box{
+  display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  align-items:center;gap:8px;min-height:460px;
+  padding:clamp(46px,6vw,75px) clamp(26px,5.2vw,68px)!important;
+  text-align:start!important;direction:inherit;
+  border-radius:36px!important;
+  background:radial-gradient(ellipse 39% 65% at 83% 53%,rgba(55,218,186,.27),transparent 78%),
+    radial-gradient(ellipse 36% 62% at 14% -15%,rgba(135,115,246,.23),transparent 78%),
+    linear-gradient(116deg,#08192c 0%,#10223e 46%,#182750 100%)!important;
+  border:1px solid rgba(147,242,233,.27)!important;
+  box-shadow:0 33px 75px rgba(8,27,49,.20),inset 0 1px rgba(255,255,255,.16)!important;
+  color:#f8fdff;overflow:hidden;position:relative;isolation:isolate;
+}
+.contact .contact-box::before,.contact .contact-box::after{display:none!important}
+.contact-noise{pointer-events:none;position:absolute;inset:0;z-index:-1;opacity:.28;
+  background-image:radial-gradient(rgba(211,244,250,.24) .8px,transparent .8px);
+  background-size:23px 23px;
+  -webkit-mask-image:linear-gradient(115deg,transparent 4%,#000 80%);
+  mask-image:linear-gradient(115deg,transparent 4%,#000 80%);
+}
+.contact-copy{position:relative;z-index:5;text-align:start;min-width:0}
+.contact .contact-box .mini-label{
+  display:inline-flex;align-items:center;gap:10px;border-radius:100px;
+  background:rgba(158,241,227,.085);border:1px solid rgba(148,243,223,.28);
+  padding:11px 15px;color:#befff0!important;letter-spacing:2px!important;
+  font:800 10px/1.1 var(--font-en);direction:ltr;
+  box-shadow:inset 0 1px rgba(255,255,255,.08)
+}
+.contact-live-dot{width:7px;height:7px;flex:none;border-radius:50%;background:#69edd0;box-shadow:0 0 0 5px rgba(87,237,198,.12),0 0 16px #6bf3da}
+.contact .contact-box h2{
+  color:#fff!important;font-size:clamp(41px,4.75vw,69px)!important;
+  font-weight:900;line-height:1.31!important;max-width:680px!important;
+  margin:25px 0 16px!important;text-align:start;letter-spacing:-1.6px;
+  text-wrap:balance
+}
+.contact .contact-box h2 span{
+  background:linear-gradient(95deg,#b4f7ea 0%,#85e4e1 39%,#cebaf9 96%);
+  -webkit-background-clip:text;background-clip:text;color:transparent!important;
+  -webkit-text-fill-color:transparent;white-space:normal;
+}
+.contact .contact-box p{
+  margin:0 0 29px!important;text-align:start;
+  font-size:clamp(13px,1.18vw,15px)!important;line-height:2.05;
+  color:#d7e7f1!important;max-width:510px!important;font-weight:600
+}
+.contact .contact-box .contact-cta{
+  isolation:isolate;position:relative;overflow:hidden;display:inline-flex;align-items:center;
+  gap:13px;min-height:62px;padding:11px 18px 11px 13px!important;
+  background:linear-gradient(115deg,#a5f9e8 0%,#9deddf 50%,#d5f8f0 100%)!important;
+  color:#102b34!important;box-shadow:0 16px 34px rgba(26,219,177,.19),inset 0 1px rgba(255,255,255,.9)!important;
+  border:1px solid rgba(225,255,250,.88);border-radius:19px!important;
+  font-size:clamp(12px,1.1vw,14px);font-weight:900;
+  transition:transform .3s ease,box-shadow .3s ease!important;
+}
+.contact .contact-box .contact-cta::before{
+  content:"";position:absolute;inset:-55% auto -55% -50%;width:31%;transform:skewX(-23deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);
+  animation:contactButtonShine 5.8s ease-in-out infinite;pointer-events:none;z-index:-1;
+}
+.contact .contact-box .contact-cta:hover{transform:translateY(-4px);box-shadow:0 21px 42px rgba(27,230,181,.30),0 0 0 4px rgba(140,249,226,.08)!important}
+.contact-cta-icon{width:39px;height:39px;border-radius:13px;display:grid;place-items:center;
+  background:linear-gradient(145deg,#1fcf91,#0e9f77);color:#fff;box-shadow:0 6px 14px #009d7330;flex:none}
+.contact-cta-icon .icon{width:23px;height:23px;color:#fff;fill:currentColor;stroke-width:1.2}
+.contact-cta-arrow{width:17px;height:17px;margin-inline-start:7px;transition:transform .25s}
+.contact-cta:hover .contact-cta-arrow{transform:translateX(-4px)}
+html[dir=ltr] .contact-cta:hover .contact-cta-arrow{transform:translateX(4px)}
+.contact-signature{display:flex;gap:7px;align-items:center;margin-top:30px;opacity:.65;direction:ltr;justify-content:flex-end}
+html[dir=ltr] .contact-signature{justify-content:flex-start}
+.contact-signature span{height:1px;width:82px;background:linear-gradient(90deg,transparent,#8ae6d6)}
+.contact-signature i{width:5px;height:5px;border-radius:50%;background:#acd0ed}
+.contact-signature i:nth-child(3){background:#9bf2df}
+.contact-scene{position:relative;height:315px;min-width:0;display:grid;place-items:center;isolation:isolate;perspective:1000px}
+.contact-aura{position:absolute;width:340px;height:340px;max-width:100%;border-radius:50%;z-index:-1;
+  background:radial-gradient(circle,rgba(66,237,209,.25) 2%,rgba(119,129,245,.14) 38%,transparent 69%);
+  filter:blur(12px);animation:contactAura 8s ease-in-out infinite alternate}
+.contact-orbit{position:absolute;top:50%;left:50%;border-radius:50%;pointer-events:none;
+  transform:translate(-50%,-50%) rotate(-15deg);border:1px solid rgba(171,224,248,.23)}
+.contact-orbit-one{width:336px;height:272px;animation:contactOrbit 28s linear infinite}
+.contact-orbit-two{width:265px;height:265px;border-style:dashed;border-color:rgba(167,244,233,.21);animation:contactOrbitReverse 37s linear infinite}
+.contact-orbit-particle{position:absolute;width:9px;height:9px;border:2px solid rgba(255,255,255,.4);border-radius:50%;background:#9ff4df;box-shadow:0 0 18px #85ffe0}
+.contact-orbit-particle.particle-a{left:4%;top:42%}.contact-orbit-particle.particle-b{right:7%;top:10%;background:#beaafa;box-shadow:0 0 18px #beaafa}.contact-orbit-particle.particle-c{right:12%;bottom:8%;width:6px;height:6px}
+.contact-back-pane{position:absolute;width:222px;height:178px;left:50%;top:50%;border-radius:30px;
+  transform:translate(-37%,-61%) rotate(15deg);border:1px solid rgba(195,217,255,.40);
+  background:linear-gradient(134deg,rgba(154,168,255,.32),rgba(70,91,178,.11));
+  box-shadow:0 18px 38px rgba(2,9,28,.23),inset 0 1px rgba(255,255,255,.26);
+  backdrop-filter:blur(5px)}
+.contact-back-pane span{position:absolute;left:27px;height:8px;border-radius:9px;background:rgba(212,230,255,.21)}
+.contact-back-pane span:first-child{top:36px;width:122px}
+.contact-back-pane span:nth-child(2){top:54px;width:160px}
+.contact-back-pane span:nth-child(3){top:72px;width:92px}
+.contact-front-pane{position:relative;width:240px;height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;
+  border-radius:31px;transform:rotate(-9deg);z-index:2;
+  border:1px solid rgba(211,255,251,.55);background:linear-gradient(141deg,rgba(25,69,81,.97),rgba(17,43,73,.96) 49%,rgba(40,47,102,.94));
+  box-shadow:0 27px 50px rgba(1,12,32,.44),0 0 0 7px rgba(226,255,251,.05),inset 0 1px rgba(255,255,255,.23);
+  animation:contactCardFloat 6.2s ease-in-out infinite;
+}
+.contact-front-pane::before{content:"";position:absolute;inset:1px;border-radius:30px;pointer-events:none;
+ background:radial-gradient(circle at 26% 0%,rgba(134,247,225,.28),transparent 43%)}
+.contact-emblem{position:relative;z-index:2;width:86px;height:86px;border-radius:27px;
+  background:linear-gradient(150deg,#5ee8bc,#19b89a);display:grid;place-items:center;
+  box-shadow:0 14px 26px rgba(2,13,29,.30),0 0 36px rgba(87,248,202,.21),inset 0 2px rgba(255,255,255,.37);
+  transform:rotate(8deg)}
+.contact-emblem .icon{width:46px;height:46px;color:#fff;fill:currentColor;stroke-width:1.2}
+.contact-message-strokes{position:relative;display:flex;align-items:center;gap:7px}
+.contact-message-strokes i{width:35px;height:6px;border-radius:100px;background:#c2f7e9;opacity:.65}
+.contact-message-strokes i:nth-child(2){width:18px;background:#d5cffd}
+.contact-message-strokes i:nth-child(3){width:27px;opacity:.35}
+.contact-mini-star{position:absolute;top:17px;right:22px;color:#c2ecff;font-size:20px;opacity:.86}
+.contact-glow-pill{position:absolute;z-index:3;right:0;bottom:10px;width:58px;height:58px;display:grid;place-items:center;
+  border:1px solid rgba(255,255,255,.63);border-radius:19px;transform:rotate(14deg);
+  background:linear-gradient(145deg,#d5fff4,#a9e4f2);color:#245477;
+  box-shadow:0 14px 30px rgba(6,20,48,.35),0 0 26px rgba(116,245,226,.25);
+  animation:contactChipFloat 5s ease-in-out infinite}
+.contact-glow-pill svg{width:29px;height:29px}
+@keyframes contactCardFloat{0%,100%{transform:rotate(-9deg) translateY(0)}50%{transform:rotate(-6deg) translateY(-12px)}}
+@keyframes contactChipFloat{0%,100%{transform:rotate(14deg) translateY(0)}50%{transform:rotate(18deg) translateY(-9px)}}
+@keyframes contactAura{from{transform:scale(.95);opacity:.7}to{transform:scale(1.1);opacity:1}}
+@keyframes contactOrbit{from{transform:translate(-50%,-50%) rotate(-15deg)}to{transform:translate(-50%,-50%) rotate(345deg)}}
+@keyframes contactOrbitReverse{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(-360deg)}}
+@keyframes contactButtonShine{0%,22%{left:-50%}49%,100%{left:135%}}
+html[data-theme=dark] .contact .contact-box{border-color:rgba(147,242,233,.30)!important}
+@media(max-width:940px){
+ .contact .contact-box{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);min-height:420px;padding:50px 38px!important}
+ .contact-scene{transform:scale(.83);transform-origin:center;min-width:0}
+ .contact .contact-box h2{font-size:clamp(37px,5vw,57px)!important}
+}
+@media(max-width:700px){
+ .contact .contact-box{grid-template-columns:1fr!important;gap:0!important;padding:43px 26px 20px!important;border-radius:26px!important;text-align:center!important}
+ .contact-copy{text-align:center!important;display:flex;flex-direction:column;align-items:center}
+ .contact .contact-box h2{font-size:clamp(34px,9vw,51px)!important;text-align:center!important;letter-spacing:-1px;margin:22px 0 13px!important}
+ .contact .contact-box p{font-size:12px!important;text-align:center!important;line-height:1.95;margin:0 auto 22px!important}
+ .contact .contact-box .mini-label{font-size:9px;padding:9px 13px}
+ .contact .contact-box .contact-cta{min-height:55px;padding:9px 15px 9px 10px!important;font-size:12px}
+ .contact-cta-icon{width:34px;height:34px;border-radius:11px}
+ .contact-cta-icon .icon{width:20px;height:20px}
+ .contact-signature{margin-top:17px;justify-content:center!important}
+ .contact-scene{height:205px;transform:scale(.66);transform-origin:center;margin-top:2px;margin-bottom:-10px}
+}
+@media(max-width:390px){
+ .contact .contact-box{padding:33px 17px 16px!important}
+ .contact .contact-box h2{font-size:clamp(30px,8.5vw,38px)!important}
+ .contact-scene{height:183px;transform:scale(.56);margin-top:-8px;margin-bottom:-16px}
+ .contact .contact-box .contact-cta{gap:8px;padding-inline:10px!important}
+ .contact-cta-arrow{margin-inline-start:0}
+}
+@media(prefers-reduced-motion:reduce){
+ .contact-aura,.contact-orbit,.contact-front-pane,.contact-glow-pill,.contact .contact-box .contact-cta::before{animation:none!important}
+ .contact .contact-box .contact-cta,.contact-cta-arrow{transition:none!important}
+}
+
+
+/* ================================================================
+   PRO STORE • SIGNAL / sculptural contact portal, no product tiles
+   ================================================================ */
+.contact.signal-section{padding:100px 0 110px;background:var(--soft,#f6f9fc)!important;overflow:hidden}
+html[data-theme=dark] .contact.signal-section{background:#081626!important}
+.signal-section .signal-panel{position:relative;isolation:isolate;overflow:hidden;color:#f6fbff;
+ border-radius:36px;min-height:520px;
+ background:radial-gradient(ellipse 58% 80% at 86% 40%,rgba(61,172,176,.20),transparent 67%),
+ radial-gradient(ellipse 55% 70% at 3% 10%,rgba(112,82,187,.18),transparent 72%),
+ linear-gradient(115deg,#080f24 0%,#10213a 55%,#122b43 100%);
+ border:1px solid rgba(184,246,237,.22);
+ box-shadow:0 24px 62px rgba(14,38,59,.19),inset 0 1px 0 rgba(255,255,255,.12)}
+.signal-section .signal-panel::before{content:"";position:absolute;inset:0;pointer-events:none;
+ background:radial-gradient(circle at 50% 50%,rgba(197,239,255,.22) .8px,transparent 1px);
+ background-size:29px 29px;opacity:.17;mask-image:linear-gradient(90deg,transparent 10%,black 100%)}
+.signal-section .signal-panel::after{content:"";position:absolute;top:0;left:15%;right:15%;height:1px;pointer-events:none;
+ background:linear-gradient(90deg,transparent,rgba(162,255,239,.66) 47%,transparent)}
+.signal-film{position:absolute;inset:0;background:linear-gradient(118deg,transparent 0%,rgba(255,255,255,.036) 48%,transparent 62%);pointer-events:none;z-index:1}
+.signal-ambient{position:absolute;pointer-events:none;border-radius:50%;filter:blur(45px);z-index:-1;animation:signalAmbientDrift 10s ease-in-out infinite alternate}
+.signal-ambient-one{width:360px;height:340px;background:rgba(55,229,194,.19);right:4%;top:10%}
+.signal-ambient-two{width:300px;height:270px;background:rgba(131,112,241,.16);left:12%;bottom:-40%;animation-delay:-3s}
+.signal-rail,.signal-bottom{position:relative;z-index:4;display:flex;align-items:center;gap:13px;direction:ltr}
+.signal-rail{padding:29px clamp(24px,4.3vw,58px) 0}
+.signal-rail-star{font:800 28px/1 var(--font-en);color:#a6ffdf;animation:signalStarTurn 20s linear infinite}
+.signal-rail-text{font:800 11px/1.2 var(--font-en);letter-spacing:2.2px;color:#b7c8d8;white-space:nowrap}
+.signal-rail-text b{color:#74dec9;margin:0 6px}
+.signal-rail-line{flex:1;height:1px;background:linear-gradient(90deg,rgba(169,240,226,.26),transparent)}
+.signal-rail-index{font:700 11px var(--font-en);letter-spacing:1.1px;color:#7f9fb3}
+.signal-layout{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:0;align-items:center;min-height:420px;padding:10px clamp(24px,4.3vw,58px) 12px}
+.signal-copy{position:relative;z-index:6;min-width:0;text-align:start;padding:20px 0}
+.signal-kicker{display:inline-flex;align-items:center;gap:11px;color:#b7ffe8;font:900 11px/1.3 var(--font-en);letter-spacing:2px;direction:ltr}
+.signal-kicker-pulse{position:relative;display:inline-block;width:8px;height:8px;border-radius:50%;background:#6befbf;box-shadow:0 0 0 5px rgba(83,237,186,.12),0 0 16px rgba(83,237,186,.8)}
+.signal-kicker-pulse::before{content:"";position:absolute;inset:-6px;border:1px solid rgba(115,255,205,.35);border-radius:50%;animation:signalPulse 3s ease-out infinite}
+.signal-section .signal-heading{color:#f9ffff!important;font-size:clamp(45px,4.7vw,70px)!important;font-weight:900;line-height:1.28!important;letter-spacing:-1.5px;max-width:690px;margin:24px 0 21px;text-wrap:balance}
+.signal-section .signal-heading span{background:linear-gradient(100deg,#e2ffe9,#73e7d6 45%,#bdb1ff 95%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.signal-section .signal-description{color:#bfcee1!important;font-size:clamp(13px,1.2vw,16px)!important;line-height:2.05!important;max-width:500px;margin:0 0 28px!important;font-weight:600;text-align:start}
+.signal-section .signal-action{display:inline-flex;direction:inherit;align-items:center;gap:13px;position:relative;z-index:2;overflow:hidden;
+ min-height:61px;padding:9px 11px 9px 20px;border-radius:18px;text-decoration:none;color:#082b29!important;
+ background:linear-gradient(112deg,#eafff4,#a8f4dd 55%,#81eacb);border:1px solid rgba(244,255,252,.93);
+ box-shadow:0 15px 34px rgba(17,221,167,.20),inset 0 1px 0 rgba(255,255,255,.8);
+ font-size:14px;font-weight:900;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.signal-section .signal-action::before{content:"";position:absolute;top:-85%;left:-65%;width:24%;height:270%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-24deg);animation:signalShine 6.2s ease-in-out infinite;pointer-events:none}
+.signal-section .signal-action:hover{transform:translateY(-4px);box-shadow:0 23px 44px rgba(15,234,178,.30),0 0 0 5px rgba(109,249,216,.08)}
+.signal-action-mark{width:40px;height:40px;flex:none;display:grid;place-items:center;border-radius:13px;background:linear-gradient(140deg,#1abc80,#087e64);box-shadow:0 5px 14px rgba(4,122,92,.18);color:#fff}
+.signal-action-mark svg{width:22px;height:22px;color:#fff;fill:currentColor;stroke-width:1.2}
+.signal-action-arrow{margin-inline-start:15px;width:33px;height:33px;display:grid;place-items:center;flex:none;border-radius:11px;background:rgba(5,72,58,.09);transition:transform .25s}
+.signal-action-arrow svg{width:19px;height:19px}
+.signal-action:hover .signal-action-arrow{transform:translateX(-4px)}
+html[dir=ltr] .signal-action:hover .signal-action-arrow{transform:translateX(4px)}
+.signal-micro{display:flex;align-items:center;gap:14px;margin-top:35px;opacity:.75;direction:ltr;justify-content:flex-end}
+html[dir=ltr] .signal-micro{justify-content:flex-start}
+.signal-micro-line{height:1px;width:80px;background:linear-gradient(90deg,transparent,#90dac8)}
+.signal-micro span:last-child{font:800 10px/1.2 var(--font-en);letter-spacing:2.5px;color:#8faabb}
+.signal-micro i{font-style:normal;color:#b4f4df;padding-inline:7px}
+.signal-art{position:relative;z-index:2;height:390px;display:grid;place-items:center;min-width:0;overflow:visible;filter:drop-shadow(0 14px 20px rgba(0,11,31,.16));transform:translateZ(0)}
+.signal-art-glow{position:absolute;width:min(90%,390px);height:80%;border-radius:50%;background:radial-gradient(ellipse,rgba(78,225,204,.21),rgba(109,122,229,.07) 47%,transparent 72%);filter:blur(20px);animation:signalGlowBreath 6.4s ease-in-out infinite alternate}
+.signal-sculpture{position:relative;width:min(100%,550px);height:100%;overflow:visible;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.signal-panel:hover .signal-sculpture{transform:translateY(-6px) rotate(-1.3deg)}
+.signal-orbit-rotate{transform-origin:292px 266px;animation:signalSlowSpin 32s linear infinite}
+.signal-orbit-counter{transform-origin:292px 266px;animation:signalSlowSpinReverse 40s linear infinite}
+.signal-plane-float{animation:signalPlaneFloat 5.4s ease-in-out infinite;transform-origin:290px 270px}
+.signal-light-ribbon{stroke-dasharray:950;stroke-dashoffset:0;animation:signalRibbonGlow 7s ease-in-out infinite alternate}
+.signal-motion-trails{animation:signalTrailBreath 3.3s ease-in-out infinite alternate}
+.signal-art-caption{position:absolute;right:2%;bottom:2%;font:900 9px/1 var(--font-en);letter-spacing:2px;color:#9ac4d4;white-space:nowrap;direction:ltr;opacity:.83}
+.signal-art-caption span{color:#c2fff2;font-size:17px;vertical-align:middle;margin-left:5px}
+.signal-bottom{padding:0 clamp(24px,4.3vw,58px) 28px;gap:20px}
+.signal-bottom>span:first-child,.signal-bottom>span:last-child{font:800 9px/1.2 var(--font-en);letter-spacing:1.9px;color:#688ca0;white-space:nowrap}
+.signal-bottom i{font-style:normal;color:#8fe7c9;padding-inline:7px}
+.signal-bottom-rule{height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(154,207,221,.22),transparent)}
+@keyframes signalAmbientDrift{to{transform:translate(35px,-24px) scale(1.13)}}
+@keyframes signalStarTurn{to{transform:rotate(360deg)}}
+@keyframes signalPulse{0%{transform:scale(.7);opacity:.7}80%,100%{transform:scale(1.8);opacity:0}}
+@keyframes signalShine{0%,22%{left:-65%}48%,100%{left:145%}}
+@keyframes signalSlowSpin{to{transform:rotate(360deg)}}
+@keyframes signalSlowSpinReverse{to{transform:rotate(-360deg)}}
+@keyframes signalPlaneFloat{0%,100%{transform:translate(0,0) rotate(-1deg)}50%{transform:translate(0,-15px) rotate(1.2deg)}}
+@keyframes signalRibbonGlow{0%{opacity:.55;stroke-dashoffset:0}100%{opacity:1;stroke-dashoffset:80}}
+@keyframes signalTrailBreath{to{opacity:.22;transform:translateX(10px)}}
+@keyframes signalGlowBreath{to{opacity:.58;transform:scale(1.12)}}
+@media(max-width:1050px){.signal-layout{grid-template-columns:minmax(0,1fr) minmax(0,.77fr);padding-top:12px}.signal-art{height:335px}.signal-section .signal-heading{font-size:clamp(39px,4.8vw,56px)!important}}
+@media(max-width:760px){.contact.signal-section{padding:67px 0 75px}.signal-section .signal-panel{border-radius:27px}.signal-layout{display:flex;flex-direction:column;padding:30px 25px 5px;min-height:0;gap:0}.signal-copy{width:100%;text-align:center;padding:0;display:flex;flex-direction:column;align-items:center}.signal-section .signal-heading{text-align:center;font-size:clamp(34px,8.5vw,52px)!important;margin:20px auto 17px;max-width:610px}.signal-section .signal-description{text-align:center;margin:0 auto 22px!important;font-size:12px!important;max-width:470px}.signal-rail{padding:20px 24px 0}.signal-rail-text{font-size:9px;letter-spacing:1.3px}.signal-art{height:270px;width:min(100%,410px);margin:5px auto 0}.signal-micro{margin-top:20px;justify-content:center!important}.signal-art-caption{bottom:5px}.signal-bottom{padding:0 24px 20px}.signal-bottom>span:first-child,.signal-bottom>span:last-child{font-size:8px;letter-spacing:1.1px}}
+@media(max-width:440px){.signal-section .signal-panel{border-radius:23px}.signal-layout{padding:28px 17px 0}.signal-rail{padding:19px 19px 0}.signal-rail-star{font-size:22px}.signal-rail-text{font-size:8px;letter-spacing:.8px}.signal-rail-index{display:none}.signal-kicker{font-size:9px;letter-spacing:1.35px}.signal-section .signal-heading{font-size:clamp(30px,9vw,39px)!important;line-height:1.36!important}.signal-section .signal-action{gap:8px;min-height:56px;width:min(100%,325px);justify-content:space-between;font-size:12px;padding:8px 9px 8px 11px}.signal-action-mark{width:36px;height:36px;border-radius:11px}.signal-action-mark svg{width:20px;height:20px}.signal-action-arrow{margin-inline-start:1px;width:30px;height:30px;border-radius:9px}.signal-art{height:212px;margin-top:8px}.signal-art-caption{font-size:8px;bottom:4px}.signal-bottom{padding:0 18px 19px}.signal-bottom>span:last-child{display:none}.signal-bottom>span:first-child{font-size:8px}.signal-micro{margin-top:16px}}
+@media(max-width:340px){.signal-layout{padding-inline:13px}.signal-section .signal-heading{font-size:29px!important}.signal-section .signal-action{font-size:11px}.signal-rail{padding-inline:13px}.signal-rail-text{letter-spacing:.4px}}
+@media(prefers-reduced-motion:reduce){.signal-panel *, .signal-panel *::before, .signal-panel *::after{animation:none!important;transition:none!important}.signal-panel:hover .signal-sculpture{transform:none}}
+
+
+/* Near the dedicated contact CTA, avoid two WhatsApp buttons competing on small screens. */
+@media(max-width:760px){.wa-float.signal-contact-visible{opacity:0!important;pointer-events:none!important;transform:translateY(14px)!important;transition:opacity .25s,transform .25s!important}}
 </style>
 </head>
 <body>
@@ -1579,10 +2246,137 @@ html #products .catalog-feature .section-sub{
 </header>
 <div class="toolbar"><div class="filters" id="filters" aria-label="Product categories"></div><div class="search-row"><label class="search-box"><svg class="icon"><use href="#i-search"/></svg><span class="visually-hidden" data-t="searchLabel">ابحث عن اشتراك</span><input id="searchInput" type="search" autocomplete="off" data-placeholder="searchPlace" placeholder="ابحث عن اشتراك..." aria-label="Search subscriptions"><button type="button" id="clearSearch" class="search-clear" aria-label="Clear search">×</button></label><label><span class="visually-hidden" data-t="sortLabel">ترتيب</span><select id="sortSelect" class="sort-select"><option value="featured" data-t="sortFeature">الترتيب المميز</option><option value="az" data-t="sortAZ">الاسم A-Z</option><option value="za" data-t="sortZA">الاسم Z-A</option></select></label></div></div>
 <div class="results" id="resultsLine" aria-live="polite"></div><div class="products-grid" id="productGrid"></div><div class="empty-state" id="emptyState"><span class="empty-icon">🔎</span><h3 data-t="emptyTitle">مش لاقيين اللي بتدور عليه</h3><p data-t="emptyDesc">جرب كلمة مختلفة أو اختار كل التصنيفات.</p><button type="button" id="resetFilters" data-t="reset">عرض كل الاشتراكات</button></div></div></section>
-<section class="editorial"><div class="wrap"><div class="editorial-box reveal"><div class="editorial-copy"><div class="mini-label">✦ MADE FOR YOUR NEXT BIG THING</div><h2 data-html="editorialTitle">إبداعك ملوش حدود.<br><span>وأدواتك كمان.</span></h2><p data-t="editorialDesc">من أول فكرة لآخر لمسة — اكتشف الأدوات اللي تساعدك تنجز، تتعلم، وتصنع حاجة عظيمة.</p><a class="btn" href="#products"><span data-t="editorialButton">اكتشف أدواتك</span><svg class="icon"><use href="#i-arrow"/></svg></a></div><div class="editorial-graphic" aria-hidden="true"><span class="graphic-sun"></span><div class="editorial-cloud"><span style="background:#ff8eb8"><strong>✳</strong></span><span style="background:#9debed"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/figma.svg" alt="" loading="lazy"></span><span style="background:#b7a1fa"><strong>AI</strong></span><span style="background:#d9fa71"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/notion.svg" alt="" loading="lazy"></span><span style="background:#ffcda3"><strong>✦</strong></span><span style="background:#88cbfe"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/canva.svg" alt="" loading="lazy"></span></div></div></div></div></section>
-<section class="how" id="how"><div class="wrap"><div class="section-head reveal"><div class="section-label">SIMPLE. FAST. PERSONAL.</div><h2 class="section-title ar-title" data-html="howTitle">تلات خطوات، <em>وخلصنا.</em></h2><p class="section-sub" data-t="howDesc">اختر المنتج اللي يناسبك، والباقي مجرد محادثة واتساب.</p></div><div class="steps"><article class="step reveal"><span class="step-num">01</span><span class="step-icon"><svg class="icon"><use href="#i-grid"/></svg></span><h3 data-t="step1Title">اختار اشتراكك</h3><p data-t="step1Desc">تصفح الـ‎+30‎ اشتراك واستخدم البحث والتصنيفات عشان تلاقي اللي محتاجه.</p></article><article class="step reveal"><span class="step-num">02</span><span class="step-icon"><svg class="icon"><use href="#i-chat"/></svg></span><h3 data-t="step2Title">كلّمنا على واتساب</h3><p data-t="step2Desc">اضغط للتفاصيل و التفعيل وهتفتح رسالة جاهزة باسم اشتراكك.</p></article><article class="step reveal"><span class="step-num">03</span><span class="step-icon"><svg class="icon"><use href="#i-check"/></svg></span><h3 data-t="step3Title">اعرف كل التفاصيل</h3><p data-t="step3Desc">استفسر عن مدة الاشتراك وطريقة التفعيل والشروط قبل ما تقرر.</p></article></div></div></section>
+<section class="editorial" aria-label="Pro Store creative inspiration"><div class="wrap"><div class="editorial-box editorial-signature reveal">
+  <div class="editorial-copy">
+    <div class="editorial-eyebrow"><span class="editorial-eyebrow-line" aria-hidden="true"></span><span class="mini-label">✦ MADE FOR YOUR NEXT BIG THING</span></div>
+    <h2 data-html="editorialTitle">إبداعك ملوش حدود.<br><span>وأدواتك كمان.</span></h2>
+    <p data-t="editorialDesc">من أول فكرة لآخر لمسة — اكتشف الأدوات اللي تساعدك تنجز، تتعلم، وتصنع حاجة عظيمة.</p>
+    <a class="btn editorial-discover" href="#products"><span data-t="editorialButton">اكتشف أدواتك</span><span class="editorial-discover-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"></use></svg></span></a>
+    <div class="editorial-footnote" aria-hidden="true"><span class="editorial-footnote-rule"></span><span>IMAGINE · CREATE · ELEVATE</span></div>
+  </div>
+  <div class="editorial-graphic" aria-hidden="true">
+    <div class="prism-stage">
+      <div class="prism-grid"></div><div class="prism-glow"></div>
+      <div class="prism-orbit"></div><div class="prism-orbit prism-orbit--oval"></div><div class="prism-arc"></div>
+      <div class="prism-light-beam"></div><div class="prism-light-beam second"></div>
+      <div class="prism-core-light"></div>
+      <div class="prism-core">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ap-face-a" x1=".06" y1=".12" x2=".95" y2=".9" gradientUnits="objectBoundingBox"><stop stop-color="#f3fbfd"/><stop offset=".24" stop-color="#a5f7e3"/><stop offset=".64" stop-color="#58b6c7"/><stop offset="1" stop-color="#3c559f"/></linearGradient>
+            <linearGradient id="ap-face-b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c8bcff"/><stop offset=".4" stop-color="#7188df"/><stop offset="1" stop-color="#394a9c"/></linearGradient>
+            <linearGradient id="ap-face-c" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffefdc"/><stop offset=".38" stop-color="#e8b9db"/><stop offset="1" stop-color="#6a69c2"/></linearGradient>
+            <linearGradient id="ap-face-d" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2fff8" stop-opacity=".97"/><stop offset="1" stop-color="#56a7c7" stop-opacity=".74"/></linearGradient>
+            <radialGradient id="ap-core"><stop stop-color="#ffffff"/><stop offset=".18" stop-color="#d9fff2"/><stop offset=".54" stop-color="#98ecd8" stop-opacity=".48"/><stop offset="1" stop-color="#98ecd8" stop-opacity="0"/></radialGradient>
+            <linearGradient id="ap-edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset=".55" stop-color="#bff7e8"/><stop offset="1" stop-color="#d2beff"/></linearGradient>
+            <filter id="ap-shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="13"/></filter>
+          </defs>
+          <path d="M251 63 407 147 430 339 253 450 88 340 76 153Z" fill="#000d23" opacity=".55" transform="translate(11 17)" filter="url(#ap-shadow)"/>
+          <path d="M251 63 407 147 430 339 253 450 88 340 76 153Z" fill="#0e3960" stroke="#dbfff5" stroke-opacity=".65" stroke-width="2.5"/>
+          <path d="M251 63 407 147 282 232 251 63Z" fill="url(#ap-face-a)"/>
+          <path d="M251 63 282 232 142 215 76 153Z" fill="url(#ap-face-b)"/>
+          <path d="M407 147 430 339 282 232Z" fill="url(#ap-face-c)"/>
+          <path d="M76 153 142 215 88 340 430 339 282 232 142 215" fill="none" stroke="#d8f9ff" stroke-opacity=".22" stroke-width="2"/>
+          <path d="M142 215 282 232 253 450 88 340Z" fill="url(#ap-face-d)"/>
+          <path d="M282 232 430 339 253 450Z" fill="url(#ap-face-b)"/>
+          <path d="M142 215 282 232 251 63Z" fill="#ecffff" opacity=".12"/>
+          <path d="M251 63 407 147 282 232 253 450 88 340 76 153Z" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="2"/>
+          <path d="M251 64 142 215 88 340" fill="none" stroke="#f5fffb" stroke-opacity=".68" stroke-width="4" stroke-linecap="round"/>
+          <path d="M251 64 407 147" fill="none" stroke="#fff" stroke-opacity=".60" stroke-width="3" stroke-linecap="round"/>
+          <path d="M142 215 282 232 430 339" fill="none" stroke="#cafff3" stroke-opacity=".48" stroke-width="2.5"/>
+          <path d="M282 232 253 450" fill="none" stroke="#deefff" stroke-opacity=".45" stroke-width="2"/>
+          <circle cx="282" cy="233" r="114" fill="url(#ap-core)" opacity=".78"/>
+          <path d="M282 196 C287 221 298 233 322 238 C298 242 287 254 282 280 C276 254 265 242 242 238 C265 233 276 221 282 196Z" fill="url(#ap-edge)" opacity=".88"/>
+          <circle cx="282" cy="238" r="6" fill="#fff"/>
+          <circle cx="126" cy="179" r="4" fill="#f9fff8" opacity=".83"/>
+          <circle cx="382" cy="333" r="3" fill="#f8deff" opacity=".68"/>
+        </svg>
+      </div>
+      <span class="prism-side-note a">THE CREATIVE / 001</span><span class="prism-side-note b">BEYOND THE ORDINARY</span>
+      <span class="prism-coordinate a">✳</span><span class="prism-coordinate b">✦</span>
+      <span class="prism-spark a"></span><span class="prism-spark b"></span><span class="prism-spark c"></span>
+    </div>
+  </div>
+</div></div></section>
+<section class="how" id="how"><div class="wrap"><div class="section-head reveal"><div class="section-label">SIMPLE. FAST. PERSONAL.</div><h2 class="section-title ar-title" data-html="howTitle">3 خطوات، <em>والباقي علينا.</em></h2><p class="section-sub" data-t="howDesc">اختيارك هو البداية — ومن أول رسالة واتساب لحدّ التفعيل، هنمشي معاك خطوة بخطوة.</p></div><div class="steps"><article class="step reveal"><span class="step-num">01</span><span class="step-icon"><svg class="icon"><use href="#i-grid"/></svg></span><h3 data-t="step1Title">استكشف واختَر</h3><p data-t="step1Desc">تصفّح أكثر من ‎+30‎ اشتراك، واستخدم البحث والتصنيفات لحد ما توصل للأداة اللي مناسبة لاحتياجك.</p></article><article class="step reveal"><span class="step-num">02</span><span class="step-icon"><svg class="icon"><use href="#i-chat"/></svg></span><h3 data-t="step2Title">راسلنا فورًا</h3><p data-t="step2Desc">اضغط على «للتفاصيل و التفعيل» وهتفتح لك رسالة واتساب جاهزة باسم الاشتراك عشان تبدأ في ثواني.</p></article><article class="step reveal"><span class="step-num">03</span><span class="step-icon"><svg class="icon"><use href="#i-check"/></svg></span><h3 data-t="step3Title">خد التفاصيل كاملة</h3><p data-t="step3Desc">اسأل عن مدة الاشتراك، وطريقة التفعيل، وأي شروط أو مميزات قبل ما تأكد طلبك — وإحنا نوضح لك كل حاجة.</p></article></div></div></section>
 <section class="faq" id="faq"><div class="wrap faq-grid"><div class="faq-side reveal"><div class="section-label">FAQ / GOOD TO KNOW</div><h2 class="ar-title" data-html="faqTitle">عندك سؤال؟<br><span style="color:#8e60db">إحنا معاك.</span></h2><p data-t="faqDesc">جاوبنا على أشهر الأسئلة عن الطلب من Pro Store. ولو محتاج أي توضيح، ابعتلنا مباشرة.</p><a class="btn btn-light js-wa" href="https://web.whatsapp.com/send?phone=201273454584" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-whatsapp"/></svg><span data-t="faqWa">اسألنا على واتساب</span></a></div><div class="faq-list" id="faqList"></div></div></section>
-<section class="contact" id="contact"><div class="wrap"><div class="contact-box reveal"><div class="mini-label">LET'S MAKE IT PRO ✦</div><h2 class="ar-title" data-html="contactTitle">جاهز تطور يومك؟<br><span>خلينا نبدأ!</span></h2><p data-t="contactDesc">ابعتلنا على واتساب عشان تعرف أسعار ومدة وتفاصيل اشتراكك المفضل.</p><a class="btn js-wa" href="https://web.whatsapp.com/send?phone=201273454584" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-whatsapp"/></svg><span data-t="contactButton">يلا نتكلم على واتساب</span><svg class="icon"><use href="#i-arrow"/></svg></a></div></div></section>
+<section class="contact signal-section" id="contact">
+  <div class="wrap">
+    <div class="signal-panel reveal">
+      <span class="signal-film" aria-hidden="true"></span>
+      <span class="signal-ambient signal-ambient-one" aria-hidden="true"></span>
+      <span class="signal-ambient signal-ambient-two" aria-hidden="true"></span>
+      <div class="signal-rail" aria-hidden="true">
+        <span class="signal-rail-star">✳</span><span class="signal-rail-text">PRO STORE <b> / </b> CONNECTION</span><span class="signal-rail-line"></span><span class="signal-rail-index">01 — 01</span>
+      </div>
+      <div class="signal-layout">
+        <div class="signal-copy">
+          <div class="signal-kicker"><span class="signal-kicker-pulse" aria-hidden="true"></span> LET'S MAKE IT PRO ✦</div>
+          <h2 class="ar-title signal-heading" data-html="contactTitle">جاهز تطور يومك؟<br><span>خلينا نبدأ!</span></h2>
+          <p class="signal-description" data-t="contactDesc">ابعتلنا على واتساب عشان تعرف أسعار ومدة وتفاصيل اشتراكك المفضل.</p>
+          <a class="signal-action js-wa" href="https://wa.me/201273454584" target="_blank" rel="noopener noreferrer">
+            <span class="signal-action-mark"><svg class="icon"><use href="#i-whatsapp"/></svg></span>
+            <span data-t="contactButton">يلا نتكلم على واتساب</span>
+            <span class="signal-action-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></span>
+          </a>
+          <div class="signal-micro" aria-hidden="true"><span class="signal-micro-line"></span><span>IDEA <i>✦</i> ACTION</span></div>
+        </div>
+        <div class="signal-art" aria-hidden="true">
+          <div class="signal-art-glow"></div>
+          <svg class="signal-sculpture" viewBox="0 0 570 530" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <defs>
+              <linearGradient id="signalArcA" x1="50" y1="270" x2="510" y2="170" gradientUnits="userSpaceOnUse"><stop stop-color="#5668c5" stop-opacity="0"/><stop offset=".25" stop-color="#8a84ea" stop-opacity=".65"/><stop offset=".54" stop-color="#8ee6e3"/><stop offset=".82" stop-color="#b8fff0"/><stop offset="1" stop-color="#7cb3eb" stop-opacity="0"/></linearGradient>
+              <linearGradient id="signalArcB" x1="75" y1="450" x2="530" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#a785ff" stop-opacity="0"/><stop offset=".42" stop-color="#d4c2ff"/><stop offset=".72" stop-color="#72dbd5"/><stop offset="1" stop-color="#88fbe3" stop-opacity="0"/></linearGradient>
+              <linearGradient id="signalPlaneBase" x1="161" y1="379" x2="420" y2="140" gradientUnits="userSpaceOnUse"><stop stop-color="#4dbac9"/><stop offset=".25" stop-color="#e0fff7"/><stop offset=".62" stop-color="#f8ffff"/><stop offset="1" stop-color="#91bcff"/></linearGradient>
+              <linearGradient id="signalPlaneTop" x1="280" y1="222" x2="434" y2="137" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset=".55" stop-color="#d9fbf4"/><stop offset="1" stop-color="#9ae8e7"/></linearGradient>
+              <linearGradient id="signalPlaneShade" x1="222" y1="286" x2="316" y2="387" gradientUnits="userSpaceOnUse"><stop stop-color="#a4b6fd"/><stop offset=".6" stop-color="#767ddc"/><stop offset="1" stop-color="#415b99"/></linearGradient>
+              <radialGradient id="signalCenter"><stop stop-color="#89fbe3" stop-opacity=".52"/><stop offset=".48" stop-color="#5bbdce" stop-opacity=".18"/><stop offset="1" stop-color="#4d81ca" stop-opacity="0"/></radialGradient>
+              <filter id="signalGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
+              <filter id="signalShadow" x="-60%" y="-80%" width="240%" height="260%"><feDropShadow dx="0" dy="22" stdDeviation="19" flood-color="#000b25" flood-opacity=".56"/><feDropShadow dx="-5" dy="-5" stdDeviation="15" flood-color="#88fce9" flood-opacity=".16"/></filter>
+            </defs>
+            <circle cx="293" cy="272" r="228" fill="url(#signalCenter)"/>
+            <g class="signal-orbit-rotate">
+              <ellipse cx="292" cy="266" rx="227" ry="138" transform="rotate(-32 292 266)" fill="none" stroke="#b5e7ed" stroke-opacity=".15" stroke-width="1.6"/>
+              <ellipse cx="292" cy="266" rx="199" ry="101" transform="rotate(31 292 266)" fill="none" stroke="#e0caff" stroke-opacity=".17" stroke-width="1.5" stroke-dasharray="3 12"/>
+              <circle cx="87" cy="322" r="4.5" fill="#b6fced"/>
+              <circle cx="462" cy="157" r="3.5" fill="#bcb4ff"/>
+            </g>
+            <g class="signal-orbit-counter">
+              <circle cx="292" cy="266" r="185" fill="none" stroke="#a5c9ff" stroke-opacity=".09" stroke-width="1.2"/>
+              <circle cx="437" cy="151" r="6.2" fill="#c9fded"/>
+              <circle cx="437" cy="151" r="15" fill="none" stroke="#a0f6e4" stroke-opacity=".38"/>
+            </g>
+            <path d="M64 380 C166 440 384 405 514 143" fill="none" stroke="#52e6d6" stroke-width="19" stroke-linecap="round" stroke-opacity=".34" filter="url(#signalGlow)"/>
+            <path class="signal-light-ribbon" d="M68 383 C192 449 395 401 514 143" fill="none" stroke="url(#signalArcA)" stroke-width="12" stroke-linecap="round"/>
+            <path d="M95 143 C215 80 382 121 468 363" fill="none" stroke="url(#signalArcB)" stroke-width="5" stroke-linecap="round" stroke-opacity=".74"/>
+            <path d="M92 165 C218 108 390 153 471 356" fill="none" stroke="#c4e4fa" stroke-width="1.4" stroke-linecap="round" stroke-opacity=".32"/>
+            <g class="signal-motion-trails" stroke="#b9fff1" stroke-linecap="round" fill="none">
+              <path d="M68 299 L176 261" stroke-width="3" opacity=".23"/>
+              <path d="M99 320 L183 286" stroke-width="6" opacity=".46"/>
+              <path d="M53 347 L148 308" stroke-width="2" opacity=".33"/>
+            </g>
+            <g class="signal-plane-float" filter="url(#signalShadow)">
+              <path d="M151 283 439 133 342 427 287 343 230 390 226 321Z" fill="url(#signalPlaneBase)"/>
+              <path d="M151 283 439 133 287 343 226 321Z" fill="url(#signalPlaneTop)"/>
+              <path d="M287 343 342 427 439 133Z" fill="url(#signalPlaneShade)"/>
+              <path d="M226 321 230 390 287 343 439 133Z" fill="#91e4da" opacity=".84"/>
+              <path d="M230 390 287 343 269 361Z" fill="#ecfffb"/>
+              <path d="M151 283 439 133 245 288Z" fill="#fff" opacity=".85"/>
+              <path d="M287 343 439 133 342 427Z" fill="none" stroke="#d9efff" stroke-width="2" stroke-opacity=".53"/>
+            </g>
+            <g fill="#c7ffed">
+              <path d="m164 149 4 11 11 4-11 4-4 11-4-11-11-4 11-4z" opacity=".95"/>
+              <path d="m482 296 3 8 8 3-8 3-3 8-3-8-8-3 8-3z" opacity=".73"/>
+            </g>
+            <g fill="#b2bdfb"><circle cx="118" cy="239" r="2.8"/><circle cx="502" cy="240" r="3"/><circle cx="363" cy="69" r="2"/><circle cx="222" cy="472" r="2.4"/></g>
+          </svg>
+          <span class="signal-art-caption">MAKE YOUR MOVE <span>↗</span></span>
+        </div>
+      </div>
+      <div class="signal-bottom" aria-hidden="true"><span>PRO STORE <i>✦</i> DIGITAL SUBSCRIPTIONS</span><span class="signal-bottom-rule"></span><span>CONNECT / CREATE / GROW</span></div>
+    </div>
+  </div>
+</section>
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-grid"><div><a href="#home" class="brand ps-nav-brand" aria-label="Pro Store Home">
   <svg class="ps-nav-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
@@ -1692,10 +2486,10 @@ const products=[
     ];
 const categories={ar:{all:'الكل',ai:'ذكاء اصطناعي',design:'تصميم',productivity:'إنتاجية',video:'مونتاج',education:'تعليم',entertainment:'ترفيه',software:'برامج وحماية'},en:{all:'All',ai:'AI Tools',design:'Design',productivity:'Productivity',video:'Video Editing',education:'Education',entertainment:'Entertainment',software:'Software & Security'}};
 const translations={
-ar:{categoryVideoTitle:'مونتاج الفيديو',categoryVideoDescription:'قصّ الفيديوهات وعدّلها وجهّزها للنشر بأدوات المونتاج المتاحة.',categoryEntertainTitle:'ترفيه ومشاهدة',categoryEntertainDescription:'اختار اشتراك المشاهدة اللي يناسبك من خدمات الترفيه المتاحة.',categorySoftwareTitle:'برامج وحماية',categorySoftwareDescription:'اكتشف برامج التصميم وإدارة ملفات PDF وأدوات الحماية الرقمية.',categoryAllTitle:'كل الاشتراكات',categoryAllDescription:'استكشف الكتالوج بالكامل واستخدم البحث والتصنيفات عشان تلاقي اللي محتاجه.',catAiBlurb:'اكتشف أدوات الذكاء الاصطناعي التي تسرّع أفكارك وتطوّر إنتاجك.',catDesignBlurb:'كل ما تحتاجه لتحويل أفكارك إلى تصميم يلفت الأنظار.',catWorkBlurb:'نظّم شغلك وأنجز مهامك مع أقوى أدوات الإنتاجية.',catEduBlurb:'مهارات جديدة وخطوة أكبر نحو أهدافك كل يوم.',catExplore:'استكشف الأدوات',cartMobile:'السلة',cartNav:'السلة',cartAdd:'أضف للسلة',cartAdded:'في السلة',cartOpen:'فتح السلة',cartClose:'إغلاق السلة',cartTitle:'سلة الاشتراكات',cartSubtitle:'اختار أكتر من اشتراك وراسلنا بخصوصهم مرة واحدة.',cartEmptyTitle:'سلتك لسه فاضية',cartEmptyDesc:'ضيف اشتراكاتك المفضلة للسلة وبعدين استفسر عنهم برسالة واحدة.',cartBrowse:'تصفح الاشتراكات',cartTotal:'الاشتراكات المختارة',cartNote:'الطلب هنا للاستفسار فقط؛ هتبعت رسالة واحدة فيها كل الاشتراكات عشان تعرف الأسعار والمدة وطريقة التفعيل.',cartWhatsApp:'فتح واتساب بالاشتراكات المختارة',cartClear:'إفراغ السلة',cartRemove:'حذف من السلة',cartSelected:'تمت الإضافة للسلة',cartCheckoutMessage:names=>`استفسار عن الاشتراكات:\n${names.map(n=>`• ${n}`).join('\n')}\nالأسعار والتفعيل، من فضلكم.`,promoMessage:'كل أدواتك الرقمية في مكان واحد — <strong><bdi dir="ltr">+30</bdi> اشتراكًا</strong> تستكشفهم بسهولة',promoLink:'شوف الاشتراكات',catAiDesc:'AI & AUTOMATION',catDesignDesc:'DESIGN & CREATIVITY',catWorkDesc:'WORK SMARTER',catEduDesc:'LEARN & GROW',skip:'تخطي إلى المنتجات',promo:'كل أدواتك الرقمية في مكان واحد — +30 اشتراكًا تستكشفهم بسهولة',promoLink:'شوف الاشتراكات',navHome:'الرئيسية',navCat:'التصنيفات',navProducts:'الاشتراكات',navHow:'طريقة الطلب',navFaq:'الأسئلة الشائعة',navCta:'تسوق الآن',heroEyebrow:'أدوات رقمية تواكب طموحك • متجر واحد ✦',heroTitle:'اشتراكاتك المفضلة.<br><span class="highlight">كلها في Pro Store.</span>',heroDesc:'من الذكاء الاصطناعي والتصميم، للتعلم والترفيه — كل الاشتراكات اللي بتحبها في مكان واحد. اكتشف، اختار، واطلب على واتساب.',heroBrowse:'اكتشف الاشتراكات',heroWa:'تواصل عبر واتساب',customerCountLabel:'عميل لدى Pro Store',heroTrust1:'‎+30‎ اشتراك رقمي',heroTrust2:'8 طرق لتصفح الكتالوج',heroTrust3:'طلب مباشر وسهل',collectionsTitle:'لكل فكرة أداة، <em>ولكل شغف اشتراك.</em>',collectionsDesc:'ابدأ بالتصنيف اللي يهمك — وخلي اختيار اشتراكك أسهل وأسرع.',viewAll:'شوف كل الاشتراكات',tileAi:'ذكاء اصطناعي',tileDesign:'تصميم وإبداع',tileProductivity:'إنتاجية وشغل',tileEducation:'تعلم وتطور',productsTitle:'اختار أداتك.<br><em>وإحنا هنا نساعدك.</em>',productsDesc:'مجموعتنا المختارة من الاشتراكات الرقمية لشغلك، دراستك، وإبداعك.',totalLabel:'اشتراكًا متاحًا للاستفسار',searchLabel:'ابحث عن اشتراك',searchPlace:'ابحث عن اشتراك...',sortLabel:'ترتيب',sortFeature:'الترتيب المميز',sortAZ:'الاسم A-Z',sortZA:'الاسم Z-A',emptyTitle:'مش لاقيين اللي بتدور عليه',emptyDesc:'جرب كلمة مختلفة أو اختار كل التصنيفات.',reset:'عرض كل الاشتراكات',editorialTitle:'إبداعك ملوش حدود.<br><span>وأدواتك كمان.</span>',editorialDesc:'من أول فكرة لآخر لمسة — اكتشف الأدوات اللي تساعدك تنجز، تتعلم، وتصنع حاجة عظيمة.',editorialButton:'اكتشف أدواتك',howTitle:'تلات خطوات، <em>وخلصنا.</em>',howDesc:'اختر المنتج اللي يناسبك، والباقي مجرد محادثة واتساب.',step1Title:'اختار اشتراكك',step1Desc:'تصفح الـ‎+30‎ اشتراك واستخدم البحث والتصنيفات عشان تلاقي اللي محتاجه.',step2Title:'كلّمنا على واتساب',step2Desc:'اضغط للتفاصيل و التفعيل وهتفتح رسالة جاهزة باسم اشتراكك.',step3Title:'اعرف كل التفاصيل',step3Desc:'استفسر عن مدة الاشتراك وطريقة التفعيل والشروط قبل ما تقرر.',faqTitle:'عندك سؤال؟<br><span style="color:#8e60db">إحنا معاك.</span>',faqDesc:'جاوبنا على أشهر الأسئلة عن الطلب من Pro Store. ولو محتاج أي توضيح، ابعتلنا مباشرة.',faqWa:'اسألنا على واتساب',contactTitle:'جاهز تطور يومك؟<br><span>خلينا نبدأ!</span>',contactDesc:'ابعتلنا على واتساب عشان تعرف أسعار ومدة وتفاصيل اشتراكك المفضل.',contactButton:'يلا نتكلم على واتساب',footerAbout:'مساحتك لاكتشاف كل أدواتك الرقمية المفضلة — من الذكاء الاصطناعي للتصميم والتعلم. اكتشف أكتر واطلب بسهولة على واتساب.',footerExplore:'استكشف',footerCategories:'أقسام المتجر',footerContact:'تواصل معنا',facebookLabel:'تابعنا على فيسبوك',facebookTitle:'Pro Store على فيسبوك',facebookDescription:'تابع أخبارنا والعروض الجديدة',footerHelp:'للأسعار، المدة، تفاصيل التفعيل، وأي استفسار عن خدماتنا، تواصل معانا.',chatNow:'تواصل معنا الآن',mobileHome:'الرئيسية',mobileCat:'الأقسام',mobileShop:'المنتجات',mobileChat:'واتساب',orderNow:'للتفاصيل و التفعيل',added:'جديد',shown:n=>n===products.length?`عرض ${n} اشتراك`:`عرض ${n} اشتراك من ${products.length}`,waGeneral:'',waProduct:name=>`تفاصيل وتفعيل ${name}`},
-en:{categoryVideoTitle:'Video Editing',categoryVideoDescription:'Trim, edit, and polish your videos with the available editing tools.',categoryEntertainTitle:'Entertainment',categoryEntertainDescription:'Find the right streaming and entertainment subscription for you.',categorySoftwareTitle:'Software & Security',categorySoftwareDescription:'Explore design software, PDF tools, and digital security solutions.',categoryAllTitle:'All Subscriptions',categoryAllDescription:'Browse the full catalog and use search and filters to find what you need.',catAiBlurb:'Powerful AI tools to bring bigger ideas to life, faster.',catDesignBlurb:'Create, edit and make every idea look extraordinary.',catWorkBlurb:'Stay focused and get more done with smarter tools.',catEduBlurb:'Learn new skills and move closer to your goals every day.',catExplore:'Explore tools',cartMobile:'Cart',cartNav:'Cart',cartAdd:'Add to cart',cartAdded:'In cart',cartOpen:'Open cart',cartClose:'Close cart',cartTitle:'Your subscription cart',cartSubtitle:'Pick multiple subscriptions and ask about all of them together.',cartEmptyTitle:'Your cart is empty',cartEmptyDesc:'Add the subscriptions you like, then ask about all of them in one message.',cartBrowse:'Browse subscriptions',cartTotal:'Selected subscriptions',cartNote:'No website payment. Your selections are sent together in a WhatsApp message to request pricing and activation details.',cartWhatsApp:'Open selected items in WhatsApp',cartClear:'Clear cart',cartRemove:'Remove from cart',cartSelected:'Added to cart',cartCheckoutMessage:names=>`Subscriptions inquiry:\n${names.map(n=>`• ${n}`).join('\n')}\nPlease share prices and activation.`,promoMessage:'Your favorite digital tools, all in one place — explore <strong>+30 subscriptions</strong> with ease',promoLink:'Explore subscriptions',catAiDesc:'AI & AUTOMATION',catDesignDesc:'DESIGN & CREATIVITY',catWorkDesc:'WORK SMARTER',catEduDesc:'LEARN & GROW',skip:'Skip to products',promo:'All your digital favorites in one happy place — explore +30 subscriptions',promoLink:'Shop the collection',navHome:'Home',navCat:'Categories',navProducts:'Subscriptions',navHow:'How it works',navFaq:'FAQs',navCta:'Browse store',heroEyebrow:'ALL YOUR FAVORITE DIGITAL TOOLS ✦',heroTitle:'Your favorite tools.<br><span class="highlight">One Pro Store.</span>',heroDesc:'From AI and design to learning and entertainment — your favorite digital subscriptions, beautifully organized. Discover, choose, and order via WhatsApp.',heroBrowse:'Explore subscriptions',heroWa:'Chat on WhatsApp',customerCountLabel:'Pro Store customers',heroTrust1:'+30 digital subscriptions',heroTrust2:'8 ways to browse the catalog',heroTrust3:'Easy WhatsApp ordering',collectionsTitle:'Explore by <em>your kind of awesome.</em>',collectionsDesc:'Find the right tools faster by starting with what you love.',viewAll:'View all subscriptions',tileAi:'AI & smarter tools',tileDesign:'Design & creativity',tileProductivity:'Work & productivity',tileEducation:'Learn & grow',productsTitle:'Find your thing.<br><em>Make it yours.</em>',productsDesc:'A curated collection of digital subscriptions for work, learning, and everything creative.',totalLabel:'subscriptions to explore',searchLabel:'Search subscriptions',searchPlace:'Search subscriptions...',sortLabel:'Sort products',sortFeature:'Featured first',sortAZ:'Name A–Z',sortZA:'Name Z–A',emptyTitle:'Nothing matched your search',emptyDesc:'Try a different search or browse all categories.',reset:'View all subscriptions',editorialTitle:'Big ideas deserve<br><span>better tools.</span>',editorialDesc:'From the first spark to the final polish — discover tools that help you make, learn and create something incredible.',editorialButton:'Explore your tools',howTitle:'Three steps. <em>That easy.</em>',howDesc:'Choose a subscription you like, and we’ll take it from there on WhatsApp.',step1Title:'Choose a subscription',step1Desc:'Browse our +30 subscriptions and use search or categories to find the right fit.',step2Title:'Message us on WhatsApp',step2Desc:'Tap Details & activation to open a prefilled message for your chosen product.',step3Title:'Get the details',step3Desc:'Ask about the price, duration, activation, and terms before deciding.',faqTitle:'Questions?<br><span style="color:#8e60db">We’ve got answers.</span>',faqDesc:'Everything you need to know about ordering from Pro Store. Need more help? Just drop us a message.',faqWa:'Ask us on WhatsApp',contactTitle:'Ready for what’s next?<br><span>Let’s make it pro.</span>',contactDesc:'Message us on WhatsApp to ask about prices, subscription periods, and details of your favorite services.',contactButton:'Let’s chat on WhatsApp',footerAbout:'A happy place for discovering your favorite digital subscriptions — from AI to design and learning. Browse easily and ask us anything on WhatsApp.',footerExplore:'Explore',footerCategories:'Store categories',footerContact:'Get in touch',facebookLabel:'FOLLOW US',facebookTitle:'Pro Store on Facebook',facebookDescription:'Latest news & updates',footerHelp:'Ask us about prices, terms, activation options, or anything else you need to know.',chatNow:'Chat with us',mobileHome:'Home',mobileCat:'Categories',mobileShop:'Products',mobileChat:'WhatsApp',orderNow:'Details & activation',added:'NEW',shown:n=>n===products.length?`Showing ${n} subscriptions`:`Showing ${n} of ${products.length} subscriptions`,waGeneral:'',waProduct:name=>`Details and activation: ${name}`}
+ar:{categoryVideoTitle:'مونتاج الفيديو',categoryVideoDescription:'قصّ الفيديوهات وعدّلها وجهّزها للنشر بأدوات المونتاج المتاحة.',categoryEntertainTitle:'ترفيه ومشاهدة',categoryEntertainDescription:'اختار اشتراك المشاهدة اللي يناسبك من خدمات الترفيه المتاحة.',categorySoftwareTitle:'برامج وحماية',categorySoftwareDescription:'اكتشف برامج التصميم وإدارة ملفات PDF وأدوات الحماية الرقمية.',categoryAllTitle:'كل الاشتراكات',categoryAllDescription:'استكشف الكتالوج بالكامل واستخدم البحث والتصنيفات عشان تلاقي اللي محتاجه.',catAiBlurb:'اكتشف أدوات الذكاء الاصطناعي التي تسرّع أفكارك وتطوّر إنتاجك.',catDesignBlurb:'كل ما تحتاجه لتحويل أفكارك إلى تصميم يلفت الأنظار.',catWorkBlurb:'نظّم شغلك وأنجز مهامك مع أقوى أدوات الإنتاجية.',catEduBlurb:'مهارات جديدة وخطوة أكبر نحو أهدافك كل يوم.',catExplore:'استكشف الأدوات',cartMobile:'السلة',cartNav:'السلة',cartAdd:'أضف للسلة',cartAdded:'في السلة',cartOpen:'فتح السلة',cartClose:'إغلاق السلة',cartTitle:'سلة الاشتراكات',cartSubtitle:'اختار أكتر من اشتراك وراسلنا بخصوصهم مرة واحدة.',cartEmptyTitle:'سلتك لسه فاضية',cartEmptyDesc:'ضيف اشتراكاتك المفضلة للسلة وبعدين استفسر عنهم برسالة واحدة.',cartBrowse:'تصفح الاشتراكات',cartTotal:'الاشتراكات المختارة',cartNote:'الطلب هنا للاستفسار فقط؛ هتبعت رسالة واحدة فيها كل الاشتراكات عشان تعرف الأسعار والمدة وطريقة التفعيل.',cartWhatsApp:'فتح واتساب بالاشتراكات المختارة',cartClear:'إفراغ السلة',cartRemove:'حذف من السلة',cartSelected:'تمت الإضافة للسلة',cartCheckoutMessage:names=>`استفسار عن الاشتراكات:\n${names.map(n=>`• ${n}`).join('\n')}\nالأسعار والتفعيل، من فضلكم.`,promoMessage:'كل أدواتك الرقمية في مكان واحد — <strong><bdi dir="ltr">+30</bdi> اشتراكًا</strong> تستكشفهم بسهولة',promoLink:'شوف الاشتراكات',catAiDesc:'AI & AUTOMATION',catDesignDesc:'DESIGN & CREATIVITY',catWorkDesc:'WORK SMARTER',catEduDesc:'LEARN & GROW',skip:'تخطي إلى المنتجات',promo:'كل أدواتك الرقمية في مكان واحد — +30 اشتراكًا تستكشفهم بسهولة',promoLink:'شوف الاشتراكات',navHome:'الرئيسية',navCat:'التصنيفات',navProducts:'الاشتراكات',navHow:'طريقة الطلب',navFaq:'الأسئلة الشائعة',navCta:'تسوق الآن',heroEyebrow:'أدوات رقمية تواكب طموحك • متجر واحد ✦',heroTitle:'اشتراكاتك المفضلة.<br><span class="highlight">كلها في Pro Store.</span>',heroDesc:'من الذكاء الاصطناعي والتصميم، للتعلم والترفيه — كل الاشتراكات اللي بتحبها في مكان واحد. اكتشف، اختار، واطلب على واتساب.',heroBrowse:'اكتشف الاشتراكات',heroWa:'تواصل عبر واتساب',customerCountLabel:'عميل لدى Pro Store',heroTrust1:'‎+30‎ اشتراك رقمي',heroTrust2:'8 طرق لتصفح الكتالوج',heroTrust3:'طلب مباشر وسهل',collectionsTitle:'لكل فكرة أداة، <em>ولكل شغف اشتراك.</em>',collectionsDesc:'ابدأ بالتصنيف اللي يهمك — وخلي اختيار اشتراكك أسهل وأسرع.',viewAll:'شوف كل الاشتراكات',tileAi:'ذكاء اصطناعي',tileDesign:'تصميم وإبداع',tileProductivity:'إنتاجية وشغل',tileEducation:'تعلم وتطور',productsTitle:'اختار أداتك.<br><em>وإحنا هنا نساعدك.</em>',productsDesc:'مجموعتنا المختارة من الاشتراكات الرقمية لشغلك، دراستك، وإبداعك.',totalLabel:'اشتراكًا متاحًا للاستفسار',searchLabel:'ابحث عن اشتراك',searchPlace:'ابحث عن اشتراك...',sortLabel:'ترتيب',sortFeature:'الترتيب المميز',sortAZ:'الاسم A-Z',sortZA:'الاسم Z-A',emptyTitle:'مش لاقيين اللي بتدور عليه',emptyDesc:'جرب كلمة مختلفة أو اختار كل التصنيفات.',reset:'عرض كل الاشتراكات',editorialTitle:'إبداعك ملوش حدود.<br><span>وأدواتك كمان.</span>',editorialDesc:'من أول فكرة لآخر لمسة — اكتشف الأدوات اللي تساعدك تنجز، تتعلم، وتصنع حاجة عظيمة.',editorialButton:'اكتشف أدواتك',howTitle:'3 خطوات، <em>والباقي علينا.</em>',howDesc:'اختيارك هو البداية — ومن أول رسالة واتساب لحدّ التفعيل، هنمشي معاك خطوة بخطوة.',step1Title:'استكشف واختَر',step1Desc:'تصفّح أكثر من ‎+30‎ اشتراك، واستخدم البحث والتصنيفات لحد ما توصل للأداة اللي مناسبة لاحتياجك.',step2Title:'راسلنا فورًا',step2Desc:'اضغط على «للتفاصيل و التفعيل» وهتفتح لك رسالة واتساب جاهزة باسم الاشتراك عشان تبدأ في ثواني.',step3Title:'خد التفاصيل كاملة',step3Desc:'اسأل عن مدة الاشتراك، وطريقة التفعيل، وأي شروط أو مميزات قبل ما تأكد طلبك — وإحنا نوضح لك كل حاجة.',faqTitle:'عندك سؤال؟<br><span style="color:#8e60db">إحنا معاك.</span>',faqDesc:'جاوبنا على أشهر الأسئلة عن الطلب من Pro Store. ولو محتاج أي توضيح، ابعتلنا مباشرة.',faqWa:'اسألنا على واتساب',contactTitle:'جاهز تطور يومك؟<br><span>خلينا نبدأ!</span>',contactDesc:'ابعتلنا على واتساب عشان تعرف أسعار ومدة وتفاصيل اشتراكك المفضل.',contactButton:'يلا نتكلم على واتساب',footerAbout:'مساحتك لاكتشاف كل أدواتك الرقمية المفضلة — من الذكاء الاصطناعي للتصميم والتعلم. اكتشف أكتر واطلب بسهولة على واتساب.',footerExplore:'استكشف',footerCategories:'أقسام المتجر',footerContact:'تواصل معنا',facebookLabel:'تابعنا على فيسبوك',facebookTitle:'Pro Store على فيسبوك',facebookDescription:'تابع أخبارنا والعروض الجديدة',footerHelp:'للأسعار، المدة، تفاصيل التفعيل، وأي استفسار عن خدماتنا، تواصل معانا.',chatNow:'تواصل معنا الآن',mobileHome:'الرئيسية',mobileCat:'الأقسام',mobileShop:'المنتجات',mobileChat:'واتساب',orderNow:'للتفاصيل و التفعيل',added:'جديد',shown:n=>n===products.length?`عرض ${n} اشتراك`:`عرض ${n} اشتراك من ${products.length}`,waGeneral:'',waProduct:name=>`تفاصيل وتفعيل ${name}`},
+en:{categoryVideoTitle:'Video Editing',categoryVideoDescription:'Trim, edit, and polish your videos with the available editing tools.',categoryEntertainTitle:'Entertainment',categoryEntertainDescription:'Find the right streaming and entertainment subscription for you.',categorySoftwareTitle:'Software & Security',categorySoftwareDescription:'Explore design software, PDF tools, and digital security solutions.',categoryAllTitle:'All Subscriptions',categoryAllDescription:'Browse the full catalog and use search and filters to find what you need.',catAiBlurb:'Powerful AI tools to bring bigger ideas to life, faster.',catDesignBlurb:'Create, edit and make every idea look extraordinary.',catWorkBlurb:'Stay focused and get more done with smarter tools.',catEduBlurb:'Learn new skills and move closer to your goals every day.',catExplore:'Explore tools',cartMobile:'Cart',cartNav:'Cart',cartAdd:'Add to cart',cartAdded:'In cart',cartOpen:'Open cart',cartClose:'Close cart',cartTitle:'Your subscription cart',cartSubtitle:'Pick multiple subscriptions and ask about all of them together.',cartEmptyTitle:'Your cart is empty',cartEmptyDesc:'Add the subscriptions you like, then ask about all of them in one message.',cartBrowse:'Browse subscriptions',cartTotal:'Selected subscriptions',cartNote:'No website payment. Your selections are sent together in a WhatsApp message to request pricing and activation details.',cartWhatsApp:'Open selected items in WhatsApp',cartClear:'Clear cart',cartRemove:'Remove from cart',cartSelected:'Added to cart',cartCheckoutMessage:names=>`Subscriptions inquiry:\n${names.map(n=>`• ${n}`).join('\n')}\nPlease share prices and activation.`,promoMessage:'Your favorite digital tools, all in one place — explore <strong>+30 subscriptions</strong> with ease',promoLink:'Explore subscriptions',catAiDesc:'AI & AUTOMATION',catDesignDesc:'DESIGN & CREATIVITY',catWorkDesc:'WORK SMARTER',catEduDesc:'LEARN & GROW',skip:'Skip to products',promo:'All your digital favorites in one happy place — explore +30 subscriptions',promoLink:'Shop the collection',navHome:'Home',navCat:'Categories',navProducts:'Subscriptions',navHow:'How it works',navFaq:'FAQs',navCta:'Browse store',heroEyebrow:'ALL YOUR FAVORITE DIGITAL TOOLS ✦',heroTitle:'Your favorite tools.<br><span class="highlight">One Pro Store.</span>',heroDesc:'From AI and design to learning and entertainment — your favorite digital subscriptions, beautifully organized. Discover, choose, and order via WhatsApp.',heroBrowse:'Explore subscriptions',heroWa:'Chat on WhatsApp',customerCountLabel:'Pro Store customers',heroTrust1:'+30 digital subscriptions',heroTrust2:'8 ways to browse the catalog',heroTrust3:'Easy WhatsApp ordering',collectionsTitle:'Explore by <em>your kind of awesome.</em>',collectionsDesc:'Find the right tools faster by starting with what you love.',viewAll:'View all subscriptions',tileAi:'AI & smarter tools',tileDesign:'Design & creativity',tileProductivity:'Work & productivity',tileEducation:'Learn & grow',productsTitle:'Find your thing.<br><em>Make it yours.</em>',productsDesc:'A curated collection of digital subscriptions for work, learning, and everything creative.',totalLabel:'subscriptions to explore',searchLabel:'Search subscriptions',searchPlace:'Search subscriptions...',sortLabel:'Sort products',sortFeature:'Featured first',sortAZ:'Name A–Z',sortZA:'Name Z–A',emptyTitle:'Nothing matched your search',emptyDesc:'Try a different search or browse all categories.',reset:'View all subscriptions',editorialTitle:'Big ideas deserve<br><span>better tools.</span>',editorialDesc:'From the first spark to the final polish — discover tools that help you make, learn and create something incredible.',editorialButton:'Explore your tools',howTitle:'Three steps. <em>We handle the rest.</em>',howDesc:'Your pick is the starting point — from the first WhatsApp message to activation, we’ll guide you every step of the way.',step1Title:'Explore & choose',step1Desc:'Browse 30+ subscriptions and use search or categories to find the tool that fits your needs.',step2Title:'Message us instantly',step2Desc:'Tap “Details & activation” to open a prefilled WhatsApp message with your selected subscription, ready to send in seconds.',step3Title:'Get the full picture',step3Desc:'Ask about the duration, activation method, and any terms or benefits before you confirm — we’ll walk you through everything.',faqTitle:'Questions?<br><span style="color:#8e60db">We’ve got answers.</span>',faqDesc:'Everything you need to know about ordering from Pro Store. Need more help? Just drop us a message.',faqWa:'Ask us on WhatsApp',contactTitle:'Ready for what’s next?<br><span>Let’s make it pro.</span>',contactDesc:'Message us instantly to ask about prices, subscription periods, and details of your favorite services.',contactButton:'Let’s chat on WhatsApp',footerAbout:'A happy place for discovering your favorite digital subscriptions — from AI to design and learning. Browse easily and ask us anything on WhatsApp.',footerExplore:'Explore',footerCategories:'Store categories',footerContact:'Get in touch',facebookLabel:'FOLLOW US',facebookTitle:'Pro Store on Facebook',facebookDescription:'Latest news & updates',footerHelp:'Ask us about prices, terms, activation options, or anything else you need to know.',chatNow:'Chat with us',mobileHome:'Home',mobileCat:'Categories',mobileShop:'Products',mobileChat:'WhatsApp',orderNow:'Details & activation',added:'NEW',shown:n=>n===products.length?`Showing ${n} subscriptions`:`Showing ${n} of ${products.length} subscriptions`,waGeneral:'',waProduct:name=>`Details and activation: ${name}`}
 };
-const faqData={ar:[['أطلب اشتراك إزاي؟','ببساطة اختار المنتج واضغط «للتفاصيل و التفعيل». هتفتح محادثة واتساب فيها رسالة باسم المنتج، ابعتها واسأل عن التفاصيل.'],['ليه الأسعار مش ظاهرة؟','الأسعار مش مضافة حاليًا على الموقع. تقدر تستفسر عن السعر والمدة والمزايا المتاحة عبر واتساب.'],['هل لازم أسجل أو أدفع على الموقع؟','لأ. الموقع لعرض الاشتراكات فقط، والطلبات والاستفسارات بتتم مباشرة على واتساب. مفيش تسجيل أو دفع إلكتروني على الصفحة.'],['إزاي أعرف مدة وطريقة التفعيل؟','اسألنا عن نوع الاشتراك والمدة، طريقة التفعيل، البلد والأجهزة المدعومة، وشروط الاستبدال أو الاسترجاع قبل تأكيد الطلب.']],en:[['How do I place an order?','Choose a subscription and click “Details & activation”. WhatsApp opens with a message containing the product name, ready for you to send.'],['Why are prices not shown?','Prices have not been added yet. You can contact us via WhatsApp to ask about current pricing, subscription duration, and benefits.'],['Do I need an account or online checkout?','No. This website is a subscription showcase. Orders and inquiries happen directly through WhatsApp; no sign-in or website payment is required.'],['How do I verify the activation details?','Before ordering, ask about the subscription type, duration, activation method, supported regions and devices, and refund or replacement terms.']]};
+const faqData={ar:[['أطلب اشتراك إزاي؟','ببساطة اختار المنتج واضغط «للتفاصيل و التفعيل». هتفتح محادثة واتساب فيها رسالة باسم المنتج، ابعتها واسأل عن التفاصيل.'],['هل الاشتراك عليه ضمان طول المدة؟','أيوه، الاشتراك عليه ضمان طول مدة الاشتراك. لو واجهتك أي مشكلة خلال المدة، تواصل معانا على واتساب للمساعدة.'],['التفعيل بياخد وقت قد إيه؟','التفعيل بيتم في دقايق بعد تأكيد الطلب، وهنوضحلك خطوات التفعيل حسب الاشتراك.']],en:[['How do I place an order?','Explore & choose and click “Details & activation”. WhatsApp opens with a message containing the product name, ready for you to send.'],['Is the subscription guaranteed for its full duration?','Yes. Your subscription is covered by a guarantee throughout its duration. If you run into an issue, contact us on WhatsApp for assistance.'],['How quickly is my subscription activated?','Activation takes just minutes after your order is confirmed. We’ll explain the activation steps for your chosen subscription.']]};
 let language='ar',filter='all',search='';
 const $=id=>document.getElementById(id);const esc=s=>String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 // Keep the shared links compact. The preview host may still request permission for external sites.
@@ -2004,6 +2798,20 @@ document.querySelectorAll('[data-category-jump]').forEach(button=>button.addEven
 $('searchInput').addEventListener('input',e=>setSearch(e.target.value.trim()));$('clearSearch').addEventListener('click',()=>{$('searchInput').value='';setSearch('');$('searchInput').focus()});$('sortSelect').addEventListener('change',renderProducts);$('resetFilters').addEventListener('click',()=>{$('searchInput').value='';search='';setFilter('all')});document.querySelectorAll('[data-footer-cat]').forEach(a=>a.addEventListener('click',()=>{search='';$('searchInput').value='';setFilter(a.dataset.footerCat)}));
 $('menuToggle').addEventListener('click',e=>{e.stopPropagation();const open=$('navLinks').classList.toggle('open');$('menuToggle').setAttribute('aria-expanded',String(open));$('menuToggle').innerHTML=`<svg class="icon"><use href="#i-${open?'close':'menu'}"/></svg>`});function closeMenu(){$('navLinks').classList.remove('open');$('menuToggle').setAttribute('aria-expanded','false');$('menuToggle').innerHTML='<svg class="icon"><use href="#i-menu"/></svg>'}$('navLinks').addEventListener('click',e=>{if(e.target.closest('a'))closeMenu()});document.addEventListener('click',e=>{if(!e.target.closest('.nav'))closeMenu()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});window.addEventListener('resize',()=>{if(window.innerWidth>820)closeMenu()});
 window.addEventListener('scroll',()=>{$('header').classList.toggle('scrolled',scrollY>12)},{passive:true});const revealEls=document.querySelectorAll('.reveal');if('IntersectionObserver'in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){const io=new IntersectionObserver((entries,obs)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.06});revealEls.forEach(e=>io.observe(e))}else revealEls.forEach(e=>e.classList.add('visible'));renderBrandMarquee();applyLanguage('ar');
+})();
+</script>
+
+<script>
+/* Only de-emphasize the duplicate floating WhatsApp control when this section is visible.
+   It reappears automatically as soon as visitors leave the contact section. */
+(function(){
+  const section=document.querySelector('.signal-section');
+  const floatButton=document.querySelector('.wa-float');
+  if(!section||!floatButton||!('IntersectionObserver' in window))return;
+  const observer=new IntersectionObserver((entries)=>{
+    floatButton.classList.toggle('signal-contact-visible',entries[0].intersectionRatio>=.38);
+  },{threshold:[0,.38,.6,1]});
+  observer.observe(section);
 })();
 </script>
 </body></html>
