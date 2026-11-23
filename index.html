@@ -2272,212 +2272,101 @@ body{font-size:16px}
   .footer ul a:not(.brand){font-size:16px!important}
   .footer a.footer-phone{font-size:16px!important}
 }
+/* Balanced mobile typography: legible without oversized text. Desktop styling remains unchanged. */
 @media(max-width:560px){
-  .promo .wrap{font-size:17px}
-  .header .lang{font-size:18px!important}
-  .hero-description,html[lang=en] .hero-description{font-size:21px!important}
-  .hero .btn{font-size:19px}
-  .mini-trust{font-size:17px}
-  .section-label{font-size:17px}
-  .section-sub,.catalog-feature .section-sub,html #products .catalog-feature .section-sub{font-size:20px!important}
-  .cat-tile h3{font-size:23px!important;line-height:1.3!important}
-  .cat-overline{font-size:14px}
-  .cat-count{font-size:15px!important}
-  .product-card h3{font-size:26px!important}
-  .product-card .card-content p,.product-card--priced .card-content>p{font-size:19px!important}
-  .cart-add{font-size:19px!important}
-  .order-btn,.product-card--priced .order-btn{font-size:19px!important}
-  .price-ribbon-kicker{font-size:17px}
-  .price-ribbon strong{font-size:22px}
-  .price-selector-head{font-size:18px}
-  .plan-option{font-size:17px;line-height:1.5}
-  .plan-option-price{font-size:22px}
-  .plan-option-price small{font-size:15px}
-  .product-gift{font-size:18px}
-  .website-studio-kicker{font-size:16px}
-  .website-studio-heading{font-size:clamp(39px,calc(8.5vw + 5px),53px)}
-  .website-studio-desc{font-size:20px}
-  .website-studio-select-label{font-size:16px}
-  .website-studio-choice{font-size:17px}
-  .website-studio-cta{font-size:20px}
-  .step h3{font-size:25px!important}
-  .step p{font-size:20px!important}
-  .faq-side p{font-size:20px!important}
-  .faq-item summary{font-size:20px!important}
-  .faq-item p{font-size:19px!important}
-  .contact .contact-box p{font-size:20px!important}
-  .contact .contact-box .contact-cta{font-size:19px!important}
-  .contact .contact-box .mini-label{font-size:16px}
-  .footer h4{font-size:22px!important}
-  .footer .footer-about{font-size:21px!important}
-  .footer ul a:not(.brand){font-size:21px!important}
-  .footer .mini-label{font-size:18px}
-  .footer a.footer-phone{font-size:21px!important}
-  .footer .footer-facebook-label{font-size:19px}
-  .footer .footer-facebook-copy strong{font-size:21px}
-  .footer .footer-facebook-copy small{font-size:19px}
-  .footer .footer-contact-note{font-size:20px!important}
-  .footer .ps-nav-descriptor{font-size:16px}
-  .footer-bottom{font-size:18px!important}
-  .mobile-bar a{font-size:18px!important}
-  .cart-drawer-top h2{font-size:31px}
-  .cart-drawer-top p{font-size:19px}
-  .cart-price-total-row{font-size:18px}
-  /* Mobile-first +5px readability: preserve the desktop typography. */
-  body{font-size:21px;line-height:1.65}
-  .header .nav-links a{font-size:19px!important}
-  .promo{height:auto;min-height:39px}
-  .promo .wrap{line-height:1.45;padding-block:6px}
-  .hero .eyebrow{font-size:14px!important;line-height:1.5}
-  .hero h1{font-size:clamp(43px,calc(10vw + 5px),61px)!important;line-height:1.26!important;overflow-wrap:normal}
+  body{font-size:16px;line-height:1.65}
+  .promo{height:auto;min-height:37px}
+  .promo .wrap{font-size:13px!important;line-height:1.5;padding-block:5px}
+  .header .nav-links a{font-size:16px!important}
+  .header .lang{font-size:15px!important}
+  .hero .eyebrow{font-size:12px!important;line-height:1.5}
+  .hero h1{font-size:clamp(34px,9.1vw,44px)!important;line-height:1.27!important;overflow-wrap:normal}
+  .hero-description,html[lang=en] .hero-description{font-size:16px!important;line-height:1.7!important}
   .hero-buttons{flex-wrap:wrap;gap:10px}
-  .hero-buttons .btn{flex:1 1 150px;min-width:0;white-space:normal;line-height:1.4;min-height:48px;text-align:center}
-  .cat-tile .cat-description{font-size:19px!important;line-height:1.5}
-  .cat-tile{min-height:256px!important}
-  .filter{font-size:17px!important;line-height:1.35}
-  .search-box input{font-size:18px!important}
-  .results,.sort-select,.sort-label,.catalog-feature-stat-label{font-size:17px!important}
-  .catalog-feature-kicker{font-size:15px!important;letter-spacing:1.3px!important}
-  .catalog-feature .section-title,html #products .catalog-feature .section-title{font-size:clamp(38px,calc(8vw + 5px),52px)!important}
-  .section-title{font-size:clamp(38px,calc(8vw + 5px),54px)}
-  .products-grid{grid-template-columns:minmax(0,1fr)!important;gap:19px}
+  .hero-buttons .btn,.hero .btn{font-size:15px!important;line-height:1.4;min-height:46px;text-align:center;white-space:normal}
+  .mini-trust{font-size:13px!important;line-height:1.5;flex-wrap:wrap}
+  .rail-label{font-size:12px!important}
+  .rail-logos span{font-size:14px!important}
+  .section-label,.catalog-feature-kicker{font-size:12px!important;letter-spacing:1.1px}
+  .section-title,.catalog-feature .section-title,html #products .catalog-feature .section-title{font-size:clamp(29px,7.6vw,38px)!important;line-height:1.3}
+  .section-sub,.catalog-feature .section-sub,html #products .catalog-feature .section-sub{font-size:16px!important;line-height:1.65!important}
+  .cat-tile h3{font-size:21px!important;line-height:1.3!important}
+  .cat-tile .cat-description{font-size:15px!important;line-height:1.55}
+  .cat-overline{font-size:11px!important}
+  .cat-count{font-size:12px!important}
+  .cat-tile{min-height:218px!important}
+  .filter{font-size:14px!important;line-height:1.4;padding:9px 12px!important}
+  .search-box input{font-size:16px!important}
+  .results,.sort-select,.sort-label,.catalog-feature-stat-label{font-size:13px!important}
+  .products-grid{grid-template-columns:minmax(0,1fr)!important;gap:17px}
   .product-card{min-width:0}
-  .product-head-category{font-size:15px!important}
-  .card-topline span{font-size:15px!important}
-  .price-selector-head small{font-size:17px!important}
-  .bundle-chip{font-size:16px}
-  .product-gift strong{font-size:17px}
-  .price-on-request{font-size:20px}
-  .plan-option{min-height:57px;gap:10px;padding:11px 12px}
-  .plan-option-price{white-space:nowrap}
-  .plan-option-price small{font-size:15px!important}
-  .product-art{height:200px!important}
-  .website-studio-footnote{font-size:17px}
-  .step-num{font-size:clamp(35px,10vw,64px)}
-  .faq-side .btn{font-size:19px!important;line-height:1.45}
-  .contact .contact-box .mini-label{font-size:16px}
-  .footer .ps-nav-descriptor{letter-spacing:0.07em}
-  .footer-grid{grid-template-columns:minmax(0,1fr)!important;gap:26px!important}
+  .product-card h3{font-size:22px!important;line-height:1.35}
+  .product-head-category,.card-topline span{font-size:12px!important}
+  .product-card .card-content p,.product-card--priced .card-content>p{font-size:15px!important;line-height:1.65!important}
+  .price-ribbon-kicker{font-size:13px!important}
+  .price-ribbon strong{font-size:19px!important}
+  .price-selector-head{font-size:14px!important}
+  .price-selector-head small{font-size:12px!important}
+  .plan-option{font-size:13px!important;line-height:1.5;padding:10px!important;min-height:51px;gap:8px}
+  .plan-option-price{font-size:18px!important;white-space:nowrap;margin-inline-start:auto}
+  .plan-option-price small{font-size:11px!important}
+  .bundle-chip{font-size:12px!important}
+  .product-gift{font-size:14px!important;line-height:1.55}
+  .product-gift strong{font-size:12px!important}
+  .price-on-request{font-size:15px!important}
+  .cart-add,.order-btn,.product-card--priced .order-btn{font-size:15px!important;line-height:1.45}
+  .order-btn{min-height:46px}
+  .product-art{height:190px!important}
+  .website-studio-kicker,.website-studio-select-label{font-size:13px!important}
+  .website-studio-heading{font-size:clamp(30px,8vw,42px)!important;line-height:1.3}
+  .website-studio-desc{font-size:16px!important;line-height:1.65}
+  .website-studio-choice{font-size:14px!important;line-height:1.4}
+  .website-studio-cta{font-size:16px!important}
+  .website-studio-footnote{font-size:12px!important}
+  .step-num{font-size:clamp(32px,9vw,52px)}
+  .step h3{font-size:21px!important}
+  .step p{font-size:16px!important;line-height:1.65}
+  .faq-side p{font-size:16px!important;line-height:1.65}
+  .faq-item summary{font-size:16px!important;line-height:1.55}
+  .faq-item p{font-size:15px!important;line-height:1.65}
+  .faq-side .btn{font-size:15px!important}
+  .contact .contact-box p{font-size:16px!important;line-height:1.65}
+  .contact .contact-box .contact-cta{font-size:16px!important;line-height:1.4}
+  .contact .contact-box .mini-label{font-size:12px!important}
+  .footer{padding-bottom:110px}
+  .footer-grid{grid-template-columns:minmax(0,1fr)!important;gap:23px!important}
   .footer-grid>div:first-child{grid-column:auto!important}
-  .footer ul{gap:12px}
-  .footer ul a:not(.brand){line-height:1.6}
-  .footer .footer-about,.footer .footer-contact-note{line-height:1.7!important}
+  .footer h4{font-size:19px!important;line-height:1.4}
+  .footer .footer-about,.footer .footer-contact-note{font-size:16px!important;line-height:1.7!important}
+  .footer ul{gap:10px}
+  .footer ul a:not(.brand){font-size:16px!important;line-height:1.55!important}
+  .footer .mini-label,.footer .footer-facebook-label{font-size:13px!important}
+  .footer a.footer-phone{font-size:16px!important;overflow-wrap:anywhere}
   .footer .footer-facebook-copy{min-width:0;overflow-wrap:anywhere}
-  .mobile-bar{grid-template-columns:repeat(4,minmax(0,1fr));padding-inline:3px}
-  .mobile-bar a{line-height:1.2;text-align:center;min-width:0;overflow-wrap:anywhere;min-height:56px}
-  .cart-item-details strong{font-size:22px}
-  .cart-item-details span{font-size:19px}
-  .cart-item-details .cart-item-price{font-size:22px}
-  .cart-summary{font-size:21px}
-  .cart-drawer-footer p{font-size:19px}
-  .cart-checkout{font-size:21px;white-space:normal;line-height:1.4}
-  .cart-clear{font-size:19px}
-  .cart-price-total small{font-size:18px}
-  .cart-price-total-row strong{font-size:22px}
-  .cart-footer-note{font-size:18px}
-
+  .footer .footer-facebook-copy strong{font-size:16px!important}
+  .footer .footer-facebook-copy small{font-size:14px!important}
+  .footer .ps-nav-descriptor{font-size:12px!important;letter-spacing:.05em!important}
+  .footer-bottom,.footer-bottom p{font-size:13px!important;line-height:1.55}
+  .footer-bottom strong{font-size:14px!important}
+  .mobile-bar{grid-template-columns:repeat(4,minmax(0,1fr));padding-inline:3px;padding-bottom:max(8px,env(safe-area-inset-bottom))}
+  .mobile-bar a{font-size:12px!important;line-height:1.2;text-align:center;min-width:0;overflow-wrap:anywhere;min-height:55px}
+  .cart-drawer-top h2{font-size:25px!important}
+  .cart-drawer-top p,.cart-drawer-footer p{font-size:15px!important}
+  .cart-item-details strong{font-size:17px!important}
+  .cart-item-details span{font-size:14px!important}
+  .cart-item-details .cart-item-price{font-size:18px!important}
+  .cart-summary,.cart-checkout{font-size:16px!important}
+  .cart-checkout{white-space:normal;line-height:1.4}
+  .cart-price-total-row,.cart-price-total small{font-size:13px!important}
+  .cart-price-total-row strong{font-size:18px!important}
+  .cart-clear,.cart-footer-note{font-size:14px!important}
 }
 @media(max-width:350px){
-  .cat-tile h3{font-size:21px!important}
-  .website-studio-heading{font-size:38px}
-  .website-studio-choice{font-size:16px}
-  .plan-option{font-size:16.5px}
-  .plan-option-price{font-size:21px}
-  .footer a.footer-phone{font-size:20px!important}
-  .header .lang{font-size:16px!important;min-width:48px;padding:8px 7px}
-  .mobile-bar a{font-size:16px!important;letter-spacing:-.3px}
+  .hero h1{font-size:34px!important}
+  .website-studio-heading{font-size:30px!important}
   .hero-buttons .btn{flex-basis:100%}
   .footer-grid{grid-template-columns:minmax(0,1fr)!important}
-
-}
-
-
-/* PRO STORE — enhanced phone-size typography, Nov 2026 */
-@media (max-width:560px){
-  body{font-size:24px;line-height:1.7}
-  .promo .wrap{font-size:19px!important;line-height:1.5}
-  .header .lang{font-size:19px!important}
-  .hero .eyebrow{font-size:17px!important}
-  .hero h1{font-size:clamp(44px,10.8vw,63px)!important;line-height:1.22!important}
-  .hero-description,html[lang=en] .hero-description{font-size:24px!important;line-height:1.65!important}
-  .hero .btn,.hero-buttons .btn{font-size:22px!important;line-height:1.35}
-  .mini-trust{font-size:20px!important;line-height:1.5;flex-wrap:wrap}
-  .rail-label,.rail-logos span{font-size:18px!important}
-  .section-label,.catalog-feature-kicker{font-size:19px!important}
-  .section-title,.catalog-feature .section-title,html #products .catalog-feature .section-title{font-size:clamp(40px,8.3vw,54px)!important;line-height:1.25}
-  .section-sub,.catalog-feature .section-sub,html #products .catalog-feature .section-sub{font-size:24px!important;line-height:1.65!important}
-  .cat-tile h3{font-size:27px!important;line-height:1.25!important}
-  .cat-tile .cat-description{font-size:22px!important;line-height:1.55}
-  .cat-overline,.cat-count{font-size:18px!important}
-  .cat-tile{min-height:278px!important}
-  .filter{font-size:20px!important;padding:12px 16px!important}
-  .search-box input{font-size:21px!important}
-  .results,.sort-select,.sort-label,.catalog-feature-stat-label{font-size:20px!important}
-  .product-card h3{font-size:30px!important;line-height:1.27}
-  .product-head-category,.card-topline span{font-size:18px!important}
-  .product-card .card-content p,.product-card--priced .card-content>p{font-size:23px!important;line-height:1.62!important}
-  .price-ribbon-kicker{font-size:20px!important}
-  .price-ribbon strong{font-size:26px!important}
-  .price-selector-head{font-size:21px!important}
-  .price-selector-head small{font-size:20px!important}
-  .plan-option{font-size:20px!important;line-height:1.43;padding:13px!important;min-height:68px;flex-wrap:wrap}
-  .plan-option-price{font-size:25px!important;margin-inline-start:auto}
-  .plan-option-price small{font-size:17px!important}
-  .bundle-chip{font-size:19px!important}
-  .product-gift{font-size:21px!important;line-height:1.55}
-  .product-gift strong{font-size:20px!important}
-  .price-on-request{font-size:23px!important}
-  .cart-add,.order-btn,.product-card--priced .order-btn{font-size:22px!important;line-height:1.4}
-  .order-btn{min-height:55px}
-  .website-studio-kicker,.website-studio-select-label{font-size:19px!important}
-  .website-studio-heading{font-size:clamp(38px,9vw,54px)!important;line-height:1.24}
-  .website-studio-desc{font-size:24px!important;line-height:1.65}
-  .website-studio-choice{font-size:20px!important;line-height:1.45}
-  .website-studio-cta{font-size:23px!important}
-  .website-studio-footnote{font-size:20px!important}
-  .step h3{font-size:29px!important}
-  .step p{font-size:24px!important;line-height:1.6}
-  .faq-side p{font-size:24px!important;line-height:1.65}
-  .faq-item summary{font-size:24px!important;line-height:1.5}
-  .faq-item p{font-size:23px!important;line-height:1.6}
-  .faq-side .btn{font-size:22px!important}
-  .contact .contact-box p{font-size:24px!important;line-height:1.6}
-  .contact .contact-box .contact-cta{font-size:22px!important;line-height:1.4}
-  .contact .contact-box .mini-label{font-size:19px!important}
-  .footer{padding-bottom:115px}
-  .footer h4{font-size:27px!important;line-height:1.4}
-  .footer .footer-about,.footer .footer-contact-note{font-size:25px!important;line-height:1.65!important}
-  .footer ul a:not(.brand){font-size:25px!important;line-height:1.6!important}
-  .footer .mini-label,.footer .footer-facebook-label{font-size:22px!important}
-  .footer a.footer-phone{font-size:25px!important;overflow-wrap:anywhere}
-  .footer .footer-facebook-copy strong{font-size:25px!important}
-  .footer .footer-facebook-copy small{font-size:23px!important}
-  .footer .ps-nav-descriptor{font-size:19px!important;letter-spacing:.03em!important}
-  .footer-bottom,.footer-bottom p{font-size:21px!important;line-height:1.55}
-  .footer-bottom strong{font-size:22px!important}
-  .footer-grid{gap:30px!important}
-  .footer ul{gap:14px}
-  .mobile-bar a{font-size:18px!important;line-height:1.15}
-  .mobile-bar{padding-bottom:max(10px,env(safe-area-inset-bottom))}
-  .cart-drawer-top h2{font-size:34px!important}
-  .cart-drawer-top p,.cart-drawer-footer p{font-size:22px!important}
-  .cart-item-details strong{font-size:25px!important}
-  .cart-item-details span{font-size:22px!important}
-  .cart-item-details .cart-item-price{font-size:25px!important}
-  .cart-summary,.cart-checkout{font-size:24px!important}
-  .cart-price-total-row,.cart-price-total small{font-size:21px!important}
-  .cart-price-total-row strong{font-size:26px!important}
-  .cart-clear,.cart-footer-note{font-size:21px!important}
-}
-@media (max-width:350px){
-  .promo .wrap{font-size:17px!important}
-  .hero h1{font-size:43px!important}
-  .hero .btn,.hero-buttons .btn{font-size:21px!important}
-  .cat-tile h3{font-size:25px!important}
-  .plan-option{font-size:19px!important}
-  .plan-option-price{font-size:23px!important}
-  .footer a.footer-phone{font-size:23px!important}
-  .mobile-bar a{font-size:16px!important}
+  .mobile-bar a{font-size:11px!important}
 }
 
 </style>
